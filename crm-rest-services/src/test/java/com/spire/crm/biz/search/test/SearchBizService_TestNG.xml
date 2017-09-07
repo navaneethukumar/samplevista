@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="SearchBizWeb Service" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+ 	<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+ 	<!-- <listener class-name="com.spire.base.controller.TestRetryAnalyzer" /> -->
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<!-- <parameter name="testRetryCount" value="10" /> -->
+	
+		
+	<test name="SearchBiz - Sanity">
+		<groups>
+			<run>
+				 <dependencies>
+					<group name="verifySearchQuery" depends-on="createFullProfile" />
+				</dependencies>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.biz.search.test" />
+		</packages>
+	</test>
+</suite>               
+        
+   

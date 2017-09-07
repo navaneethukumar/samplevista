@@ -1,0 +1,18 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testData,SpireTestObject.testSteps
+1,validateActivityData,null,"Check whether all the elements of ActivityStream are displayed in HomePage and CandidateDetailsPage[ActivityExpand icon, ActivitySearchIcon, sortBy dropdown, dateRange dropdown, selectAll activities]"
+2,validateCreatedActivity,"Video call,0","Create 'VideoCall' activity without giving any ratings, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+3,validateCreatedActivity,"Instance Message,0","Create 'Instance Message' activity without giving any ratings, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+4,validateCreatedActivity,"Voice call made,0","Create 'Voice call made' activity without giving any ratings, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+5,validateCreatedActivity,"Voice call received,0","Create 'Voice call received' activity without giving any ratings, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+6,validateCreatedActivity,"Notes,0","Create 'Notes' activity, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+7,validateCreatedActivity,"Video call,1","Create 'VideoCall' activity by giving 1 rating to allrating types, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+8,validateCreatedActivity,"Video call,3","Create 'VideoCall' activity by giving 3 rating to allrating types, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+9,validateCreatedActivity,"Video call,5","Create 'VideoCall' activity by giving 5 rating to allrating types, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+10,validateCreatedActivity,"Instance Message,5","Create 'Instance Message' activity by giving 5 rating to allrating types, it should create activity and created activity should be displayed in candidate details page, also validate by refreshing the page, validate in HomePage"
+11,filterActivities_CandidateDetailsPage,call,Filter activities by 'call' in candidate details page; activities shoud filter accordingly in candidate details page
+12,filterActivities_CandidateDetailsPage,SMS,Filter activities by 'SMS' in candidate details page; activities shoud filter accordingly in candidate details page
+13,filterActivities_CandidateDetailsPage,Notes,Filter activities by 'Notes' in candidate details page; activities shoud filter accordingly in candidate details page
+14,filterActivities_HomePage,call,Filter activities by 'call' in Home page; activities shoud filter accordingly in Home page
+15,filterActivities_HomePage,SMS,Filter activities by 'SMS' in Home page; activities shoud filter accordingly in Home page
+16,filterActivities_HomePage,Notes,Filter activities by 'Notes' in Home page; activities shoud filter accordingly in Home page
+17,textSearchInActivities,null,Search for a text in activities; it should show all the activities having the searched keyword

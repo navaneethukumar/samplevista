@@ -1,0 +1,9 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,validateElementPresent," ""#Action: Login and verify PipeLine elements in Home page #Expected: After login all the PipeLine elements like CRMsta"
+2,validateLeadCandidates,#Action: Login and verify Lead candidates page #Expected: Only lead candidates should be displayed and count should also mat
+3,validateEngageCandidates, #Action: Login and verify engaged candidates page #Expected: Only engaged candidates should be displayed and count should also match.
+4,validateApplicantCandidates, #Action: Login and verify Applicant candidates page #Expected: Only Applicant candidates should be displayed and count should also matc
+5,validateHoldCandidates," ""#Action: Login and verify PipeLine elements in Home page #Expected: After login all the PipeLine elements like CRMsta"
+6,validateRejectedCandidates," ""#Action: Login and verify PipeLine elements in Home page #Expected: After login all the PipeLine elements like CRMsta"
+7,validateDateRangeFilter,#Action: Login and select DateRangeFilter like "The past 1 day"
+8,validateMinimizeStageBtn,#Action: Login and select DateRangeFilter like ""The past 1 day

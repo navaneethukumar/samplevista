@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Sales CRM UI Automation" parallel="tests" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReportV2" />
+	</listeners>
+	
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="testRetryCount" value="3" />
+	<parameter name="selenium_grid" value="true" />
+
+	<test
+		name="CRM UI Automation - SALES SANITY TestScriptsFor Demo US" parallel="methods"
+		thread-count="5">
+		<parameter name="ui_host"
+			value="https://spiredemovista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="userId" value="6004_batch@demo.com" />
+		<parameter name="password" value="6004_B@tch" />
+		<parameter name="db_host"
+			value="demo.clapjg0gnhyn.us-east-1.rds.amazonaws.com" />
+		<parameter name="db_password" value="abcd#abcd" />
+		<parameter name="schemaName" value="demo_schema" />
+		<parameter name="searchHostName" value="34.200.14.24:8381" />
+
+		<groups>
+			<run>
+				<include name="verifyProfileCreation" />
+				<include name="verifyActivityCreation" />
+				<include name="verifyProfileUpdation" />
+				<include name="verifyProfileDetailsDeletion" />
+				<include name="verifySkillsAddition" />
+				<include name="verifyActivityElements" />
+				<include name="verifyCreateEmailTemplate" />
+				<include name="verifyCloneCampaign" />
+				<include name="verifySearchResults" />
+				<include name="verifyAttachLabel" />
+				<include name="verifyHomePageElements" />
+				<include name="verifyPipeline" />
+				<!-- <include name="uploadFile" /> -->
+				<include name="createNewJobPost" />
+				<include name="postJobFromURL" />
+				<include name="verifyEngagementScore" />
+				<include name="verifySimilarProfiles" />
+
+			</run>
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.sales.smoke.test.DemoSmokeTestPlan" />
+   		</classes>
+	</test>
+
+	<test
+		name="CRM UI Automation - SALES SANITY TestScripts For Demo-India" parallel="methods"
+		thread-count="5">
+		<parameter name="ui_host"
+			value="https://spiredemoindvista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="userId" value="batch@demoind.com" />
+		<parameter name="password" value="6020_B@tch" />
+		<parameter name="db_host"
+			value="demo.clapjg0gnhyn.us-east-1.rds.amazonaws.com" />
+		<parameter name="db_password" value="abcd#abcd" />
+		<parameter name="schemaName" value="demoind_schema" />
+		<parameter name="searchHostName" value="34.200.14.24:8381" />
+
+		<groups>
+			<run>
+				<include name="verifyProfileCreation" />
+				<include name="verifyActivityCreation" />
+				<include name="verifyProfileUpdation" />
+				<include name="verifyProfileDetailsDeletion" />
+				<include name="verifySkillsAddition" />
+				<include name="verifyActivityElements" />
+				<include name="verifyCreateEmailTemplate" />
+				<include name="verifyCloneCampaign" />
+				<include name="verifySearchResults" />
+				<include name="verifyAttachLabel" />
+				<include name="verifyHomePageElements" />
+				<include name="verifyPipeline" />
+				<!-- <include name="uploadFile" /> -->
+				<include name="createNewJobPost" />
+				<include name="postJobFromURL" />
+				<include name="verifyEngagementScore" />
+				<include name="verifySimilarProfiles" />
+
+			</run>
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.sales.smoke.test.DemoIndSmokeTestPlan" />
+   		</classes>
+	</test>
+	
+</suite> 

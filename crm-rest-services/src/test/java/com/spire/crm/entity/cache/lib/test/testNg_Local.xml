@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CACHE LIB JAR " parallel="tests"
+	thread-count="1">
+
+	<!--  <listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>  -->
+
+	<test name="CACHE LIB Testscripts - Sanity">
+		<groups>
+
+			<run>
+				<include name="verifyBulkFetchCandidate_Sanity" />
+
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.cache.lib.test" />
+		</packages>
+	</test>
+
+
+</suite>               
+        
+   

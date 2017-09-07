@@ -1,0 +1,19 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps,JobPostBean.jobTitle,JobPostBean.companyName,JobPostBean.education,JobPostBean.description,JobPostBean.skills,JobPostBean.country,JobPostBean.State,JobPostBean.addressLane,JobPostBean.city,JobPostBean.postalCode,JobPostBean.Name,JobPostBean.Email
+1,verifyProfileCreation,,,,,,,,,,,,,
+2,verifyProfileUpdation1,,,,,,,,,,,,,
+3,verifyProfileDetailsDeletion1,,,,,,,,,,,,,
+4,verifySkillsAddition,,,,,,,,,,,,,
+5,verifyActivityElements,,,,,,,,,,,,,
+6,verifyActivityCreation1,,,,,,,,,,,,,
+7,verifyEngagementScore,,,,,,,,,,,,,
+8,verifySearchResults,,,,,,,,,,,,,
+9,verifyHomePageElements,,,,,,,,,,,,,
+10,verifyCreateEmailTemplate,,,,,,,,,,,,,
+11,verifyAttachLabel,,,,,,,,,,,,,
+12,verifyCloneCampaign1,,,,,,,,,,,,,
+13,verifyPipeline,,,,,,,,,,,,,
+14,verifySkillsAddition,,,,,,,,,,,,,
+15,verifySimilarProfiles,,,,,,,,,,,,,
+16,postJobFromURL,validatePageElementsDisplayed,Senior Software Engineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+17,createNewJobPost,validatePageElementsDisplayed,Sofware Developer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+18,uploadFile,validatePageElementsDisplayed,Software Engineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com

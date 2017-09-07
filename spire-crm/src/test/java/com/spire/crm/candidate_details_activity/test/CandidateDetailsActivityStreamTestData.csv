@@ -1,0 +1,8 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,changeStageTo,changeStageTo
+2,validateAllElementPresent,validateAllElementPresent
+3,attachAttachment,attachAttachment
+4,createRemindMeLater,createRemindMeLater
+5,validateAllElementPresent,validateAllElementPresent
+6,validateAlreadyViewed,validateAlreadyViewed
+7,createActivity,createActivity

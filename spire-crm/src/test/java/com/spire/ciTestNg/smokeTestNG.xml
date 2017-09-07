@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="tests" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReportV2" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="testRetryCount" value="3" />
+	<parameter name="selenium_grid" value="true" />
+
+	<test name="CRM UI Automation - Production Sanity TestScriptsFor SPIRE">
+		<parameter name="URL"
+			value="https://spirevista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="batch@spire.com" />
+		<parameter name="password" value="6062_B@tch" />
+		<parameter name="REALM" value="REALM44" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test
+		name="CRM UI Automation - Production Sanity TestScriptsFor ACCENTURE-US">
+		<parameter name="URL"
+			value="https://acnusvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="batch@accenture.com" />
+		<parameter name="password" value="6008_b@Tch" />
+		<parameter name="REALM" value="REALM11" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+	<test name="CRM UI Automation - Production Sanity TestScriptsFor TEST">
+		<parameter name="URL"
+			value="https://testvista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="username" value="6015_batch@test.com" />
+		<parameter name="password" value="6015_B@tch" />
+		<parameter name="REALM" value="REALM12" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+
+</suite> 

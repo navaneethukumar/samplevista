@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM Test Suites" parallel="tests" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+	<parameter name="ui_host" value="192.168.2.124" />
+	<parameter name="biz_host" value="192.168.2.124" />
+	<parameter name="db_host" value="://192.168.2.124:3306" />
+	<parameter name="entity_host" value="192.168.2.69" />
+	<parameter name="mautic_host" value="://192.168.2.69:8085" />
+	<parameter name="environment_type" value="Test" />
+	<parameter name="JOBBOARD_ID" value="6001:7001:3596101EA95344D1B824BA7BBD4A333A" />
+
+	<test name="ConfigMgmt Testscripts - Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.config" />
+		</packages>
+	</test>
+
+	<test name="ConfigMgmt Testscripts - LRG">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.config" />
+		</packages>
+	</test>
+
+	<test name="ConfigMgmt Testscripts - SRG">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.config" />
+		</packages>
+	</test>
+
+
+
+	<test name="SpireConfigWebService - SRG">
+		<parameter name="SERVICE_NAME" value="CRM-SERVICE" />
+		<groups>
+			<run>
+				<include name="RG" />
+			</run>
+			<packages>
+				<package name="com.spire.crm.entity.config.web.test" />
+			</packages>
+		</groups>
+	</test>
+
+	<test name="Engagement score new Testscripts - Sanity" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.EngagementScoreNew.test" />
+		</packages>
+	</test>
+
+	<test name="Engagement score new Testscripts - LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.EngagementScoreNew.test" />
+		</packages>
+	</test>
+
+	<test name="BlobStoreService - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.blob.store.test" />
+		</packages>
+	</test>
+
+	<test name="BlobStoreService - SRG" >
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.blob.store.test" />
+		</packages>
+	</test>
+
+	<test name="BlobStoreService - LRG" >
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.blob.store.test" />
+		</packages>
+	</test>
+
+	<test name="CrmPipelineService - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.pipeline.test" />
+		</packages>
+	</test>
+
+
+	<test name="CrmProfilesService - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.profile.test" />
+		</packages>
+	</test>
+
+	<test name="CrmPipelineService - SRG" >
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.pipeline.test" />
+		</packages>
+	</test>
+
+	<test name="CrmProfilesService - SRG" >
+		<groups>
+			<run>
+				<include name="SRG" />
+				<exclude name="createCRMProfile_SRG" />
+
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.profile.test" />
+		</packages>
+	</test>
+
+	<test name="CrmProfilesService - LRG" >
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.profile.test" />
+		</packages>
+	</test>
+
+
+	<test name="CrmRulesService - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.rule.test" />
+		</packages>
+	</test>
+
+	<test name="CrmRulesService - SRG" >
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.rule.test" />
+		</packages>
+	</test>
+
+	<test name="CrmRulesService - LRG" >
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.rule.test" />
+		</packages>
+	</test>
+
+	<test name="SocialService - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.social.test" />
+		</packages>
+	</test>
+
+	<test name="SocialService - SRG" parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.social.test" />
+		</packages>
+	</test>
+
+	<test name="SocialService - LRG" parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.social.test" />
+		</packages>
+	</test>
+
+
+	<test name="ProfileService - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.profileService.test" />
+		</packages>
+	</test>
+
+	<test name="ProfileService - SRG" parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.profileService.test" />
+		</packages>
+	</test>
+
+	<!-- <test name="Kafka Async Testscripts - Sanity">
+		<groups>
+
+			<run>
+				<include name="Sanity" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+
+	<test name="Kafka Async Testscripts - SRG">
+		<groups>
+
+			<run>
+				<include name="SRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+
+
+	<test name="Kafka Async Testscripts - LRG">
+		<groups>
+
+			<run>
+				<include name="LRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+	-->
+
+	<test name="ActivityStream_Entity Testscripts - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+				<exclude name="listActivity_Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.activity.stream.test" />
+		</packages>
+	</test>
+
+	<test name="ActivityStream_Entity Testscripts - SRG" >
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.activity.stream.test" />
+		</packages>
+	</test>
+
+	<test name="ActivityStream_Entity Testscripts - LRG" >
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.activity.stream.test" />
+		</packages>
+	</test>
+
+	<test name="ActivityStream_Biz Testscripts - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.activity.stream.test" />
+		</packages>
+	</test>
+
+	<test name="CRM NOTIFICATION Service - Sanity" >
+		<groups>
+
+			<run>
+				<include name="Sanity" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.notification.web.test" />
+		</packages>
+	</test>
+	<test name="SearchBiz Test- Sanity" >
+		<parameter name="ENABLE_DATA_EXECUTION" value="false" />
+		<groups>
+			<run>
+				<dependencies>
+					<group name="verifySearchQuery" depends-on="createFullProfile" />
+				</dependencies>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.biz.search.test" />
+		</packages>
+	</test>
+	<test name="Campaign entity Service Testscripts - Sanity"
+		parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.campaign.test" />
+		</packages>
+	</test>
+
+	<test name="User  biz Service Testscripts - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.userservice.test" />
+		</packages>
+	</test>
+
+	<test name="New Campaign biz Service Testscripts - Sanity"
+		parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.campaign.test" />
+		</packages>
+	</test>
+
+	<test name="New Labels biz Service Testscripts - Sanity" >
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+	<test name="New Labels biz Service Testscripts - SRG" >
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+
+	<test name="New Labels biz Service Testscripts - LRG" >
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+
+	<test name="Notes-Service - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.biz.notes.test" />
+		</packages>
+	</test>
+
+	<test name="ComServiceEntity Testscripts - Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.entity.emails.test" />
+		</packages>
+	</test>
+
+	<test name="ComServiceBIZ Testscripts - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.emails.test" />
+		</packages>
+	</test>
+
+	<test name="AttachmentsService Testscripts - Sanity" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.attachments.test" />
+		</packages>
+	</test>
+
+	<!-- <test name="ASSETS Entity Testscripts - Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.entity.assets.test" />
+		</packages>
+	</test>
+	<test name="ASSETS Entity Testscripts - SRG">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.entity.assets.test" />
+		</packages>
+	</test>
+	<test name="ASSETS Entity Testscripts - LRG">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.entity.assets.test" />
+		</packages>
+	</test> -->
+
+	<!-- <test name="JobPost Testscripts - SANITY,SRG,LRG" >
+		<groups>
+			<run>
+				<include name="Sanity" />
+				<include name="SRG" />
+				<include name="LRG" />
+				<exclude name="verifyProfileUpload" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.job.post.test" />
+		</packages>
+	</test> -->
+
+	<test name="Similar Profiles - Sanity">
+		<groups>
+			<run>
+				<include name="SimilarProfiles_Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.hireassimilar.profiles" />
+		</packages>
+	</test>
+
+	<test name="Authorization Service - Sanity" >
+		<groups>
+
+			<run>
+				<include name="Sanity" />
+				<exclude name="verifyDeleteRole_Sanity" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.authorization.test" />
+		</packages>
+	</test>
+
+
+</suite>

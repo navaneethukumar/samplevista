@@ -1,0 +1,8 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps
+1,verifyCreateRole_Sanity,Steps : # API : POST # Action : Create Role and verify the role is displayed in list
+2,verifyDeleteRole_Sanity,Steps : # API : DELETE # Action : Delete the Role and verify the role is not displayed in list
+3,verifyCreatePermission_Sanity,Steps : # API : POST # Action : Create Permission and verify the permission is displayed in list
+4,verifyAddPermissionToRole_Sanity,Steps : # API : POST # Action :Add the  Permission to the Roles
+5,verifyremovePermissionfromRole_Sanity,Steps : # API : POST # Action rmove the permission from  the Roles
+6,verifyAddRoleToUser_Sanity,Steps : # API : POST # Action add the role to the User
+7,verifyremoveRolefromUser_Sanity,Steps : # API : POST # Action remove the role from the User

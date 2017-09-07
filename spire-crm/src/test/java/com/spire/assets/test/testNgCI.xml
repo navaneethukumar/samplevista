@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Assets UI Automation" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+	<parameter name="testRetryCount" value="3" />
+	<parameter name="testRetryInterval" value="6" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="userId" value="user@star.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="ui_host" value="http://test2.vista.corp.spire.com/UI/src/app/index.html#/" />
+	<parameter name="WEB_RUN_MODE" value="grid" />
+	<parameter name="WEB_DRIVER_GRID" value="http://172.16.0.204:4444/wd/hub" />
+
+
+	<test name="Assets UI- Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.assets.test.AssetsTestPlan" />
+		</classes>
+	</test>
+
+</suite>   

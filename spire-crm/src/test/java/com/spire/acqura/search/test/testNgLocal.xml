@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="UI Automation" parallel="methods"   
+	thread-count="1">
+	<!-- <listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport"/>
+		<listener class-name="com.spire.base.controller.TestRetryListener"/>
+	</listeners> -->  
+	
+	<!--instance names host -->
+	<parameter name="healthCheck" value="false" />
+	<parameter name="host"
+		value="http://staging.vista.corp.spire.com/acqura-search/app/index.html#/v" />
+	<parameter name="ui_host" value="http://staging.vista.corp.spire.com/acqura-search/app/index.html#/v" />
+	<parameter name="userId" value="tester@logica.com"/>
+	<parameter name="password" value="spire@123"/>
+	<parameter name="healthCheck" value="false" />
+	<!--browser values of *Firefox,Chrome,IE -->  
+	<parameter name="browser" value="Chrome" />
+
+	<!-- <parameter name="testRetryCount" value="4" /> -->
+	
+	<test name="CRM UI Automation - admin_ui_Test">
+		<groups>
+			<run>
+			   
+				<include name= "validateNavigationToSearchResultsPageFromHomePage" />
+				
+			</run>
+			
+		</groups>
+		<packages>
+			<package name="com.spire.acqura.search.test" />  
+		</packages>
+	</test>
+</suite>   

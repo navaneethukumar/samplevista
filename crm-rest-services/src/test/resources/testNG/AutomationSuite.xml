@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Automation-Suite" parallel="tests" thread-count="5">
+
+	<listeners>
+		<!-- <listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" /> -->
+		<listener class-name="com.spire.crm.restful.util.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+	<parameter name="ui_host" value="192.168.2.124" />
+	<parameter name="biz_host" value="192.168.2.124" />
+	<parameter name="db_host" value="://192.168.2.124:3306" />
+	<parameter name="entity_host" value="192.168.2.69" />
+	<parameter name="mautic_host" value="://192.168.2.69:8085" />
+	<parameter name="environment_type" value="Test" />
+	<parameter name="JOBBOARD_ID" value="6001:7001:3596101EA95344D1B824BA7BBD4A333A" />
+
+	<suite-files>
+		<suite-file path="./SanitySuite_TestNG.xml" />
+		<suite-file path="./SRGSuite_TestNG.xml" />
+		<suite-file path="./LRGSuite_TestNG.xml" />
+	</suite-files>
+</suite>
+

@@ -1,0 +1,27 @@
+{
+
+  "query" : {
+
+    "bool" : {
+
+      "must" : [ {
+
+        "match" : {
+
+          "id" : {
+
+            "query" \"",
+
+            "type" : "phrase"
+
+          }
+
+        }
+
+      } ]
+
+    }
+
+  }
+
+}

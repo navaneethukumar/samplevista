@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="EmailTemplateEntity Service" parallel="tests"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+
+	<test name="EmailTemplateEntity Testscripts - Sanity">
+		<groups>
+			<run>
+
+
+				<!-- <include name="verify_getMessageId" /> -->
+				<!-- <include name="verify_getListTemplates" />
+				<include name="verify_createTemplates" />
+				<include name="verify_deleteTemplate" />
+				<include name="verify_sendEmails" />
+				<include name="verify_sendBulkEmails" />
+				<include name="verify_sendCustomEmails" />
+				<include name="verify_sendCustomEmailsBulk" />
+				<include name="verify_getMessageId" />
+				<include name="verify_getTemplate" /> 
+				<include name="verify_markEmailAsRead" />-->
+				<include name="verify_unsubscribeCandidate" /> -->
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.emails.test" />
+		</packages>
+	</test>
+
+</suite>               
+        
+   

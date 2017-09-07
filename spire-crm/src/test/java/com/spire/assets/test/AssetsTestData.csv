@@ -1,0 +1,5 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,verifyCreateAssetSanity,
+2,verifyModifyAssetSanity,
+3,verifyListAssetsSanity,
+4,verifyDeleteAssetSanity,

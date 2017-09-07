@@ -1,0 +1,5 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,validateListPageElements," ""#Action: Login and verify Campaign List page elements"
+2,campaignlistIsDisplayed," ""#Action: Login and verify Campaign List displayed if records present otherwise no records found should display"
+3,verifycloneCampaign," ""#Action: Login and verify clone campaign from  List if records present otherwise pass the test "
+4,verifyviewCampaign," ""#Action: Login and verify view campaign from  List if records present otherwise pass the test "

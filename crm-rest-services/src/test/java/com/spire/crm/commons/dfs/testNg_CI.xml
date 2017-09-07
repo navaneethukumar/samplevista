@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="SPIRE-DFS Testscripts" parallel="tests" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+
+	<!-- DFS Test plans -->
+
+	<test name="DFS Testscripts - Sanity">
+		<groups>
+
+			<run>
+				<include name="Sanity" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.dfs" />
+		</packages>
+	</test>
+
+	<test name="DFS Testscripts - SRG">
+		<groups>
+
+			<run>
+				<include name="SRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.dfs" />
+		</packages>
+	</test>
+
+	<test name="DFS Testscripts - LRG">
+		<groups>
+
+			<run>
+				<include name="LRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.dfs" />
+		</packages>
+	</test>
+
+</suite>               
+        
+   

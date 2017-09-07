@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="methods" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+
+	<!--instance names host -->
+	<parameter name="ui_host" value="http://test.vista.corp.spire.com/UI/src/app/index.html#/" />
+	<parameter name="userId" value="batchUser@dell.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="*Firefox" />
+
+	<test name="ActivityStream UI - Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.activityStream" />
+		</packages>
+	</test>
+	
+	<test name="ActivityStream UI - SRG">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.activityStream" />
+		</packages>
+	</test>
+</suite>   
+
+

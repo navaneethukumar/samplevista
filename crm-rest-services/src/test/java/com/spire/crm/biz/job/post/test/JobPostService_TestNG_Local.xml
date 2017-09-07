@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="JobPost Testscripts" preserve-order="true">
+	<parameter name="healthCheck" value="false" />
+	
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+	
+	<!-- <parameter name="SERVICE_ENDPOINT_URL" value="http://172.16.1.209:8080/crm-jobpost-web/api/v1/jobpost" 
+		/> -->
+		
+	<!-- <parameter name="JOBBOARD_ID" value="6001:7001:3596101EA95344D1B824BA7BBD4A333A" /> -->
+	<parameter name="REQUISITION_SERVICE_URL" value="http://192.168.2.156:8084/talent-entity-layer/api/requisitions" />
+	<!-- <parameter name="USERNAME" value="" />
+	<parameter name="PASSWORD" value="" /> -->
+	<test name="JobPost Service sanity Testscripts - ">
+
+
+	<groups>
+		<run>
+			<include name="Sanity" />
+			<include name="SRG" />
+			<include name="LRG" />
+		</run>
+	</groups>
+    
+   <!--  <packages>
+			<package name="com.spire.crm.biz.job.post.test" />
+		</packages>  -->
+    
+    <classes>
+    <class name="com.spire.crm.biz.job.post.test.JobPostServiceTestPlan">
+	<!-- <methods>
+		<include name="closeJobPost" />
+   </methods> -->  
+    </class>
+   </classes>
+
+	</test>
+
+</suite>               

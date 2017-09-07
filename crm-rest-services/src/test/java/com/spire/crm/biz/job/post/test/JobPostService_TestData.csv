@@ -1,0 +1,18 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps,JobLocation.location_city,JobLocation.location_postalcode,JobLocation.location_country,JobLocation.location_stateprovince,JobLocation.location_us_area_code
+1,verifyGetSeeddata,verifyGetSeeddata test,w,w,w,w,w
+2,verifyGetOpenJobDetails1,verifyGetOpenJobDetails test,w,w,w,w,w
+3,verifyGetJobDetails,verifyGetJobDetails test,w,w,w,w,w
+4,verifyGetJobPostAnalyticsData,verifyGetJobPostAnalyticsData test,w,w,w,w,w
+5,verifyGetWeeklyJobPostAnalyticsData,verifyGetWeeklyJobPostAnalyticsData test,w,w,w,w,w
+6,verifyGetDateRangeJobPostAnalyticsData1,verifyGetDateRangeJobPostAnalyticsData test,w,w,w,w,w
+7,verifyProfileUpload1,testing verifyProfileUpload,w,w,w,w,w
+8,verifyJobPost1,testverityJobPost,w,w,w,w,w
+9,verifyFileUpload,testverifyFileUpload,w,w,w,w,w
+10,verifyJobPostByURL,"testverifyJobPostByURL(SpireTestObject, TestData)",w,w,w,w,w
+11,verifyDetailsOfOpenPostions,"testverifyDetailsOfOpenPostions(SpireTestObject, TestData)",w,w,w,w,w
+12,verifyGetJobDetailsOne,GetJobs,w,w,w,w,w
+13,verifyJobPostUS1,PostJobInUS,Los Angeles,90003,US,US-CA,323
+14,wrongJobLocationValidation1,WrongjobLocationValidation,dassad,90003,US,US-CA,323
+15,verifyPostedJobInJobdetails1,verifyPostedJobInJobdetails,Los Angeles,90003,US,US-CA,323
+16,verifyJPInOpenPosition1,verifyJPInOpenPosition,Los Angeles,90003,US,US-CA,323
+17,closeJobPost,Create A JobPost And closeIt,w,w,w,w,w

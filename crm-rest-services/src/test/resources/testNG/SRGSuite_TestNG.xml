@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="SRG-Automation" parallel="tests" thread-count="5">
+
+	<test name="ConfigMgmt Testscripts - SRG">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.config" />
+		</packages>
+	</test>
+
+	<test name="SpireConfigWebService - SRG">
+		<parameter name="SERVICE_NAME" value="CRM-SERVICE" />
+		<groups>
+			<run>
+				<include name="RG" />
+			</run>
+			<packages>
+				<package name="com.spire.crm.entity.config.web.test" />
+			</packages>
+		</groups>
+	</test>
+
+
+	<test name="BlobStoreService - SRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.blob.store.test" />
+		</packages>
+	</test>
+
+
+	<test name="CrmPipelineService - SRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.pipeline.test" />
+		</packages>
+	</test>
+
+	<test name="CrmProfilesService - SRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.profile.test" />
+		</packages>
+	</test>
+
+
+	<test name="CrmRulesService - SRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.rule.test" />
+		</packages>
+	</test>
+
+
+
+	<test name="SocialService - SRG" parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.social.test" />
+		</packages>
+	</test>
+
+
+	<test name="ProfileService - SRG" parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.profileService.test" />
+		</packages>
+	</test>
+
+
+	<test name="Kafka Async Testscripts - SRG">
+		<groups>
+
+			<run>
+				<include name="SRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+
+
+
+	<test name="ActivityStream_Entity Testscripts - SRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.activity.stream.test" />
+		</packages>
+	</test>
+
+	<test name="New Labels biz Service Testscripts - SRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+	
+	<test name="JobPost Testscripts - SANITY,SRG,LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.job.post.test" />
+		</packages>
+	</test>
+
+</suite>
+

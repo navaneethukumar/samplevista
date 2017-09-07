@@ -1,0 +1,86 @@
+".NET Job Profile:
+
+Job Title- - - Technical Architect (P5)
+
+Job ID --- ABC_12345
+Job Location- Bangalore
+
+Experience- - 6.10 to 9.0 year(s)
+
+
+QUALIFICATION
+
+BE/B.Tech/ME/M.Tech/MS/MCA/MSC/MCM
+
+
+REQUIRED SKILLS
+
+Experience on ASP.NET/.NET Webservices.
+
+- Good Knowledge on SQL Server.
+
+- Deep knowledge of the .NET 3.5/4.0/4.5 Framework, including Visual Studio 2008, VB.NET, ASP.NET,
+
+- ASMX and WCF Web Services, and ADO.NET.
+
+- Ability to design and optimize Oracle stored procedures.
+
+- Experience with Java Script Frameworks and HTML 5,CSS 3.
+
+- Strong experience designing and working with n-tier architectures (UI, Business Logic Layer, Data Access Layer) along with some experience with service-oriented architectures (SOA).
+
+- Solid understanding of object-oriented programming (OOP) and computer science foundations, such as memory management and low-level algorithm performance.
+
+- Strong knowledge of software implementation best practices.
+
+Work Experience with Retail Products or Point of Sales. 
+
+- Windows Azure 
+
+ROLE DESCRIPTION
+
+- Capability to understand the typical Business requirement / Customer requirement and come up with the best technical solution.
+
+- Able to debug the issues quickly and solve them as per the SLA.
+
+- Communicate with the required stakeholder with proper message.
+
+- Take the ownership and drive the task level solutions individually. 
+
+- Learns and adapts to applicable technologies, products, and tools
+
+- Demonstrates good understanding of the product and owns one or more modules
+
+- Gains an in-depth understanding of the business requirements of the product
+
+- Understands and analyze business requirements and designs for accuracy and completeness
+
+- Proactively reports all activities to the reporting managers
+
+- Proactively seeks assistance as required
+
+- Provides assistance or guidance to the new members of the team
+
+- Ensures that the code is delivered for Integration Build and Test which includes the release content
+
+- Lead/mentor developers and share knowledge through knowledge-sharing presentations.
+
+- Participate in a small, experienced, energetic team on a rapid, agile development schedule.
+
+- Ability to adapt quickly to an existing, complex environment.
+
+- Ability to quickly learn new concepts and software is necessary.
+
+- Should be a self-motivated, independent, detail oriented, responsible team-player and exhibit exceptional relationship management skills.
+
+- Passionate about building high-quality systems with software implementation best practices while leading and mentoring a team of developers.
+"
+Education: BE
+Title: Testing1234
+Company: spire
+
+City:Thiruvananthapuram
+State:Kerala
+Country:India
+Address Lane:HSR
+Postal Code: 695505

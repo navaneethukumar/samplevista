@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="tests" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReportV2" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="testRetryCount" value="3" />
+	<parameter name="selenium_grid" value="true" />
+	<parameter name="environment_type" value="production" />
+	
+
+	<test name="CRM UI Automation - Production Sanity TestScriptsFor IDFCBANK">
+		<parameter name="URL"
+			value="https://idfcvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="6000_batch@idfcbank.com" />
+		<parameter name="password" value="6000_B@tch" />
+		<parameter name="REALM" value="REALM1" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test
+		name="CRM UI Automation - Production Sanity TestScriptsFor ACCENTURE-US">
+		<parameter name="URL"
+			value="https://acnusvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="batch@accenture.com" />
+		<parameter name="password" value="6008_b@Tch" />
+		<parameter name="REALM" value="REALM11" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test
+		name="CRM UI Automation - Production Sanity TestScriptsFor ACCENTURE-IND">
+		<parameter name="URL"
+			value="https://acnidcvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="batch@accentureind.com" />
+		<parameter name="password" value="6017_B@tch" />
+		<parameter name="REALM" value="REALM13" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test
+		name="CRM UI Automation - Production Sanity TestScriptsFor ACCENTURE-PHILIPPINES">
+		<parameter name="URL"
+			value="https://acnphilvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="batch@accenture.com" />
+		<parameter name="password" value="6022_B@tch" />
+		<parameter name="REALM" value="REALM17" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test name="CRM UI Automation - Production Sanity TestScriptsFor COGNIZANT">
+		<parameter name="URL"
+			value="https://cognizantvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="batch@cognizant.com" />
+		<parameter name="password" value="6023_B@tch" />
+		<parameter name="REALM" value="REALM18" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+				<exclude name="uploadFile" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test name="CRM UI Automation - Production Sanity TestScriptsFor SPIRE">
+		<parameter name="URL"
+			value="https://spirevista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="batch@spire.com" />
+		<parameter name="password" value="6062_B@tch" />
+		<parameter name="REALM" value="REALM44" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test
+		name="CRM UI Automation - Production SANITY TestScripts For TEST Tenant" parallel="methods"
+		thread-count="10">
+		<parameter name="ui_host"
+			value="https://testvista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="userId" value="6015_batch@test.com" />
+		<parameter name="password" value="6015_B@tch" />
+		<parameter name="db_host"
+			value="mysql-prod-db.clapjg0gnhyn.us-east-1.rds.amazonaws.com" />
+		<parameter name="db_password" value="SpireAiZie1qu123" />
+		<parameter name="schemaName" value="test_schema" />
+		<parameter name="searchHostName" value="lb-services-midtier.spire2grow.com:8381" />
+
+		<groups>
+			<run>
+				<include name="verifyProfileCreation" />
+				<include name="verifyActivityCreation" />
+				<include name="verifyProfileUpdation" />
+				<include name="verifyProfileDetailsDeletion" />
+			    <!-- <include name="verifySkillsAddition" /> -->
+				<include name="verifyActivityElements" />
+				<include name="verifyCreateEmailTemplate" />
+				<include name="verifyCloneCampaign" />
+				<include name="verifySearchResults" />
+				<include name="verifyAttachLabel" />
+				<include name="verifyHomePageElements" /> 
+				<include name="verifyPipeline" />
+				<!-- <include name="uploadFile" /> -->
+				<include name="createNewJobPost" />
+				<include name="postJobFromURL" />
+				<include name="verifyEngagementScore" />
+				<include name="verifySimilarProfiles" />
+
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.smoke.test" />
+		</packages>
+	</test>
+
+	<test
+		name="CRM UI Automation - Production Sanity TestScriptsFor Test Tenant">
+		<parameter name="URL"
+			value="https://testvista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="username" value="6015_batch@test.com" />
+		<parameter name="password" value="6015_B@tch" />
+		<parameter name="REALM" value="REALM12" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+	
+</suite>

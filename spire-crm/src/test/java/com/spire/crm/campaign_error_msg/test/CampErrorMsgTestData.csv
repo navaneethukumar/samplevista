@@ -1,0 +1,5 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,verifyMsgInHomePage,verifyMsgInHomePage
+2,VerifyMsgInSearchedResultPage,VerifyMsgInSearchedResultPage
+3,VerifyMsgInEngagedPage,VerifyMsgInEngagedPage
+4,VerifyMsgInProfilePage,VerifyMsgInProfilePage

@@ -1,0 +1,12 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,EngagementRule.ruleName,EngagementRule.field,EngagementRule.operator,EngagementRule.value,EngagementRule.value2,EngagementRule.actionName,EngagementRule.properties
+1,ValidateElementsPresent,Rule
+2,createNewRule,Rule,Engagment Score,Grater Than (>=),50,,CHANGE_CRM_STAGE,Lead
+3,createNewRule2,Rule,Engagment Score,Grater Than (>=),50,,CHANGE_CRM_STAGE,Engaged
+4,createNewRule3,Rule,Engagment Score,Less Than (<=),50,,CHANGE_CRM_STAGE,Applicant
+5,createNewRule4,Rule,Engagment Score,Grater Than (>=),50,,ASSIGN_CAMPAIGN
+6,createNewRule5,Rule,Engagment Score,Less Than (<=),50,,ASSIGN_CAMPAIGN
+7,createNewRule6,Rule,Engagment Score,Equals (==),50,,ASSIGN_CAMPAIGN
+8,createNewRule7,Rule,Engagment Score,Between (<=>),10,20,ASSIGN_CAMPAIGN,
+9,createNewRuleNVerifyInCRM,Rule,Engagment Score,Grater Than (>=),50,,CHANGE_CRM_STAGE,Lead
+10,deleteRule,Rule,,,,,,
+11,EditRule,,,Less Than (<=),10,,CHANGE_CRM_STAGE,Engaged

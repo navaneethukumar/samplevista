@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Profile Service" parallel="tests" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+	
+
+	<test name="ProfileServcie Testscripts - Sanity">
+		<groups>
+
+			<run>
+			<!-- <include name="Sanity" />
+			<include name="SRG" /> -->
+			<include name="createBulkProfile_Validate_sanity" />
+			</run>
+
+		</groups>   
+   
+		<packages>
+			<package name="com.spire.crm.biz.profileService.test" />
+		</packages>
+	</test>
+
+</suite>               
+        
+   

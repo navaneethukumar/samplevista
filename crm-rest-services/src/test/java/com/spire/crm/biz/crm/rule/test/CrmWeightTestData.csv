@@ -1,0 +1,13 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.TestTags,TestData.TestSteps,WeightageRuleEntity.tenantID,WeightageRuleEntity.compatability,WeightageRuleEntity.connectFactors,WeightageRuleEntity.awareness,WeightageRuleEntity.personalCommunication,WeightageRuleEntity.interestLevel,WeightageRuleEntity.broadcastCommunication,WeightageRuleEntity.interestLevel
+1,createDeleteWeight_Sanity,Create,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+2,verifyDuplicateWeight_LRG,Duplicate,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+3,verifygetAllWeight_SRG,Get,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+4,updateWeight_Sanity,Update,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+5,updateWeight_SRG,above100,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+6,updateWeight_SRG,below100,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+7,updateWeight_SRG,NegativeScore,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+8,getWeight_SRG,default,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+9,createWeight_SRG,above100,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+10,createWeight_SRG,below100,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+11,createWeight_SRG,NegativeScore,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0
+12,deleteWeight_LRG,invalidTenant,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created ,1001,0,0,0,0,0,0,0

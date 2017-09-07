@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="tests" thread-count="20">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="userId" value="tester@logica.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="ui_host"
+		value="http://staging.vista.corp.spire.com/UI/src/app/index.html#/" />
+	<parameter name="testRetryCount" value="2" />
+	<parameter name="selenium_grid" value="true" />
+
+	<test name="Search UI - verifyFreetextSearchBySearchBarSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchBySearchBarSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByAttributesLRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByAttributesLRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyFreetextSearchBySearchBarSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchBySearchBarSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyFreetextSearchByAdvSearchSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchByAdvSearchSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - ValidateSearchResultFacetingProfileSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="ValidateSearchResultFacetingProfileSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifySearchByAttributesSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchByAttributesSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifySearchByAttributesSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchByAttributesSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByAttributesSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByAttributesSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByAttributesSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByAttributesSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifySearchByAttributesLRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchByAttributesLRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+
+
+	<test name="Search UI - verifyAdvanceSearchByFullParanthesisLRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFullParanthesisLRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+	
+	<test name="Search UI - verifycreateFullProfile"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifycreateFullProfile" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifySearchBySingleAttributeSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchBySingleAttributeSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+
+
+	<test name="Search UI - verifyFreetextSearchByAdvSearchSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchByAdvSearchSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+
+
+
+
+	<test name="Search UI - verifyFreetextSearchBySearchBarLRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchBySearchBarLRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyFreetextSearchByAdvSearchLRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchByAdvSearchLRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+
+
+	<test name="Search UI - verifySearchBySingleAttributeSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchBySingleAttributeSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByFullParanthesisSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFullParanthesisSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifySearchByFullParanthesisSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchByFullParanthesisSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifySearchByFullParanthesisSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchByFullParanthesisSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifySearchByFullParanthesisLRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchByFullParanthesisLRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByFullParanthesisSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFullParanthesisSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByFreetextCombWithGuidedSanity">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFreetextCombWithGuidedSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByFreetextCombWithGuidedSRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFreetextCombWithGuidedSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyAdvanceSearchByFreetextCombWithGuidedLRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFreetextCombWithGuidedLRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - ManageSaveSearchSanity" preserve-order="true">
+		<groups>
+			<run>
+				<include name="ManageSaveSearchSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.ManageSaveSearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyRequisitionSearchSanity"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyRequisitionSearchSanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<test name="Search UI - verifyRequisitionSearchSRG"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifyRequisitionSearchSRG" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchRetainValuesInFaceting"
+		preserve-order="true">
+		<groups>
+			<run>
+				<include name="verifySearchRetainValuesInFaceting" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+	<!-- <test name="Activity Stream Test Cases" preserve-order="true"> <groups> 
+		<run> <include name="Sanity" /> </run> </groups> <packages> <package name="com.spire.crm.avtivity.test" 
+		/> </packages> </test> -->
+
+	<!-- <test name="Profile Details Page Test Cases" preserve-order="true"> 
+		<groups> <run> <include name="Sanity" /> </run> </groups> <packages> <package 
+		name="com.spire.crm.candidate_details_activity.test" /> </packages> </test> -->
+	<test name="Email Flows Test Cases" preserve-order="true">
+
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.email.test" />
+		</packages>
+
+	</test>
+	<test name="JOB POST Test Cases" preserve-order="true">
+
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.jobpost" />
+		</packages>
+
+	</test>
+
+	<test name="CRM Pipeline Test Cases" preserve-order="true">
+
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.pipeline.test" />
+		</packages>
+
+	</test>
+
+	<test name="ActivityStream UI - Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.activityStream" />
+		</packages>
+	</test>
+
+	<test name="Assets UI- Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.assets.test.AssetsTestPlan" />
+		</classes>
+	</test>
+	
+	<test name="ActivityStream UI - SRG">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.activityStream" />
+		</packages>
+	</test>
+
+	<test name="Campaign UI Automation - SmokeTests">
+		<groups>
+			<run>
+
+				<include name="Sanity" />
+
+			</run>
+
+		</groups>
+		<packages>
+			<package name="com.spire.crm.campaign.test" />
+		</packages>
+	</test>
+	<test name="CampaignErrorMsg UI Automation - SmokeTests">
+		<groups>
+			<run>
+
+				<include name="Sanity" />
+
+			</run>
+
+		</groups>
+		<packages>
+			<package name="com.spire.crm.campaign_error_msg.test" />
+		</packages>
+	</test>
+	<test name="Label UI Automation - SmokeTests">
+		<groups>
+			<run>
+
+				<include name="Sanity" />
+
+			</run>
+
+		</groups>
+		<packages>
+			<package name="com.spire.crm.labels.test" />
+		</packages>
+	</test>
+
+</suite>   

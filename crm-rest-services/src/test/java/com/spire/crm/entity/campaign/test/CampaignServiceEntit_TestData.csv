@@ -1,0 +1,20 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.TestData,TestData.data,TestData.TestSteps
+1,changeStage_Sanity,null,Lead,Create Label without attaching to any entityId
+2,listCampaign_Sanity,null,All,verify the list is displaying the list of campaigns 
+3,deleteCampaign_Sanity,null,UnPublished,Delete the published Campaign
+4,deleteCampaign_Sanity,null,Published,Delete the published Campaign
+5,deleteBulkCampaign_Sanity,3,UnPublished,Delete the Unpublished Campaign
+6,deleteBulkCampaign_Sanity,3,Published,Delete the published Campaign
+7,getCampaignById_Sanity,FULL,Published,Verify get campaign by id and projection 
+8,getCampaignById_Sanity,BASIC,Published,Verify get campaign by id and projection 
+9,addCamptoNoStage_Sanity,NA,NA,"Verify candidate stage is changed to lead,when campaign is added"
+10,removeCampfromCandidate_Sanity,NA,NA,Verify added campaigns are able to remove from candidate
+11,editCampaign_Sanity,Na,edit Campaign,Verify the edit Campaign
+12,sheduleEvents_Sanity,Na,null,Verify the shedule events are fetching after adding candidate to campaign
+13,getLeadsForCampaign_Sanity,Na,null,Verify the added candidates are present under the campaign
+14,cloneCampaign_Sanity,Na,null,Verify the user able to clone the campaign
+15,getBulkCampaignById_Sanity,BASIC,Published,Verify get campaign by id and projection 
+16,getCampaignForLead_Sanity,null,null,Verify All the added campaign are listed under the candidate ID
+17,updateEmailReadEvent_LRG,null,null,Verify user is able to update the event
+18,updateFeedBackEvent_LRG,NA,NA,Verify user is able to update the event
+19,updateFormSubmitEvent_LRG,NA,NA,Verify user is able to update the event

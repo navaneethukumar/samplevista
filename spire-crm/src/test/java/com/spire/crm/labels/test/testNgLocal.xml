@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" thread-count="1">
+	<listeners>
+		
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="userId" value="user@star.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="ui_host" value="http://test2.vista.corp.spire.com/UI/src/app/index.html#/" />
+
+	<test name="CRM UI Label Automation">
+	
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.labels.test" />
+		</packages>
+	  
+	</test>
+
+</suite>   

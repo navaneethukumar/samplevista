@@ -1,0 +1,46 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.data,TestData.TestSteps
+1,createProfile_Validate_SRG,Candidate,createProfile with only candidate details
+2,createProfile_Validate_Sanity,Social,createProfile with candidate and Social details
+3,createProfile_Validate_Sanity,CRM,createProfile with candidate and Social details
+4,createProfile_Validate_Sanity,Social_CRM,"createProfile with candidate, Social and CRM details"
+5,createProfile_Validate_SRG,Education,createProfile with candidate basic details and education details
+6,createProfile_Validate_SRG,Employer,createProfile with candidate basic details and employer details
+7,createProfile_Validate_SRG,Project,createProfile with candidate basic details and project details
+8,createProfile_Validate_SRG,Skill,createProfile with candidate basic details and skill details
+9,validateCreatedProfile,FULL,"Create profile with full details like basic, education, employer, project, Skill, Social details and CRM details"
+10,getProfile_Sanity,null,Create profile and get by created candidateId
+11,getProfile_SRG,invalid,Get profile details by giving invalid candidateId
+12,createSingleProfile_Json_Sanity,candidate1.json,Create profile with full details and validate
+13,createSingleProfile_Json_Sanity,candidate2.json,Create profile with full details and validate
+14,createSingleProfile_Json_Sanity,candidate3.json,Create profile with full details and validate
+15,createSingleProfile_Json_Sanity,candidate4.json,Create profile with full details and validate
+16,createSingleProfile_Json_Sanity,candidate5.json,Create profile with full details and validate
+17,createSingleProfile_Json_Sanity,candidate6.json,Create profile with full details and validate
+18,createSingleProfile_Json_Sanity,candidate7.json,Create profile with full details and validate
+19,createSingleProfile_Json_Sanity,candidate8.json,Create profile with full details and validate
+20,createSingleProfile_Json_Sanity,candidate9.json,Create profile with full details and validate
+21,createSingleProfile_Json_Sanity,candidate10.json,Create profile with full details and validate
+22,createBulkProfile_Validate_sanity,candidate11.json,Create profile and get by created candidateIds
+23,createBulkProfile_Validate_SRG,candidate12.json,create bulk profile by giving single profile detail
+24,createBulkProfile_Validate_SRG,candidate13.json,create bulk profiles without giving social and crm
+25,createBulkProfile_Validate_LRG,candidate14.json,"create candidate by giving name,skill and social"
+26,createBulkProfile_Validate_SRG,candidate15.json,"Create bulk profile, in bulk request give one of the candidate detail invalid "
+27,getBulkProfile_Sanity,candidate11.json,Get bulk profiles by giving valid profileIds
+28,getBulkProfile_LRG,candidate15.json,get bulk profiles by giving valid profileIds with one Invalid profileId
+29,getBulkProfileInvalid_LRG,,get bulk profiles by giving all invalid profileIds
+30,update_candidateBasicDetails_Sanity,,update the candidate details
+31,update_candidateEducationDetails_Sanity1,,update candidate education details
+32,update_candidateSocialDetails_Sanity,,update candidate social details
+33,addNewEducationalDetails_SRG,,Adding new educational details to the candidate
+34,addNewEmployerDetails_SRG,,Adding new Employer Details
+35,addNewSkillToCandidate_Sanity,,Adding new skill to the candidate
+36,removeSkillOfCandidate_SRG1,,remove skill of candidate
+37,removeSkillOfCandidate_LRG1,candidate13.json,remove skill of the candidate who doesn't have skill
+38,getProfilesByCrmFilter_Sanity,candidate11.json,get profiles based on given crm stage
+39,getProfilesByCrmFilter_SRG1,,get profiles according to the engagement score limit
+40,getProfilesByCrmFilter_LRG1,,get profiles according to the order given
+41,getHireAs,candidate1.json,GetHireAs
+42,GetAlsoViewed,candidate1.json,GetAlsoViewed
+43,alreadyViewedCandidatesForRecruiter_Sanity,,"Create a profile and call alreadyViewedCandidatesForRecruiter service with userId, response should be false as the candidate is not viewed. Then getProfile and call already viewd service, it should be true"
+44,getRecruitersWhoViewed_Sanity,,"Create a profile and getProfile using 1recruiter, then call getAllRecruiters, it should be null as it is viewd by only one recruiter"
+45,isCandidateView_Sanity,,"Create a candidate and view the candidate, first time 'isViewed' should be false, again view the profile, isViewed should be true"

@@ -1,0 +1,25 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.data,TestData.TestSteps,ESPojo.activityTypeInfo,ESPojo.benifitLevel,ESPojo.companyLevel,ESPojo.interestLevel,ESPojo.fitmentLevel
+1,createActivityBenfitLevel,one rating,Create Activity by giving 1 rating to Benefits & Compensation Awareness,Video call,1,0,0,0
+2,createActivityBenfitLevel,two rating,Create Activities  by giving 2 ratings for the  candidate to Benefits & Compensation Awareness,Video call,2,0,0,0
+3,createActivityBenfitLevel,three rating,Create Activities  by giving 3 ratings for the  candidate to Benefits & Compensation Awareness,Video call,3,0,0,0
+4,createActivityBenfitLevel,four rating,Create Activities  by giving 4 ratings for the  candidate to Benefits & Compensation Awareness,Video call,4,0,0,0
+5,createActivityBenfitLevel,five rating,Create Activities by giving  5 ratings for the  candidate to Benefits & Compensation Awareness,Video call,5,0,0,0
+6,createActivityBenfitLevel,Email Send,send email to the candidate who have 5 ratings and check that engagement score need to increase 1,Video call,5,0,0,0
+7,createActivityCompanyLevelLRG,one rating,"Create Activity by giving 1 rating to company,product and job  Awareness",Instance Message,0,1,0,0
+8,createActivityCompanyLevelLRG,two rating,"Create Activities  by giving 2 ratings for the  candidate to company,product and job  Awareness",Instance Message,0,2,0,0
+9,createActivityCompanyLevelLRG,three rating,"Create Activities  by giving  3 ratings for the  candidate to company,product and job  Awareness",Instance Message,0,3,0,0
+10,createActivityCompanyLevelLRG,four rating,"Create Activities  by giving  4 ratings for the  candidate to company,product and job  Awareness",Instance Message,0,4,0,0
+11,createActivityCompanyLevelSanity,five rating,"Create Activities by giving  5 ratings for the  candidate to company,product and job  Awareness",Instance Message,0,5,0,0
+12,createActivityInterestLevelLRG,one rating,Create Activity by giving 1 rating to Interest Level,Voice call made,0,0,1,0
+13,createActivityInterestLevelLRG,two rating,Create Activities  by giving 2 ratings for the candidate to Interest Level,Voice call made,0,0,2,0
+14,createActivityInterestLevelLRG,three rating,Create Activities  by giving  3 ratings for the candidate to Interest Level,Voice call made,0,0,3,0
+15,createActivityInterestLevelLRG,four rating,Create Activities  by giving  4 ratings for the candidate to Interest Level,Voice call made,0,0,4,0
+16,createActivityInterestLevelSanity,five rating,Create Activities by giving  5 ratings for the candidate to Interest Level,Voice call made,0,0,5,0
+17,createActivitiesWithoutRating,Video Call,Create Activity Video Call without any ratings,Video call,0,0,0,0
+18,createActivitiesWithoutRating,Instance Message,Create Activity Instance Message without any ratings,Instance Message,0,0,0,0
+19,createActivitiesWithoutRating,Voice Call Made,Create Activity Voice Call Made without any ratings,Voice call made,0,0,0,0
+20,createActivitiesWithoutRating,Voice Call Received,Create Activity Voice Call Received without any ratings,Voice call received,0,0,0,0
+21,createActivitiesWithoutRating,Notes,Create Activity Notes without any ratings,,,,,
+22,assignCandidateToCamapign,campaign,Assign candidate to the campaign,,,,,
+23,createAllActivitiesWithoutRating,,create all the activites with activity stream without giving any ratings,Video call,0,0,0,0
+24,createAllActivitiesWithFullRatings1,,create all the activites with activity stream by giving 5 ratings and send email mmanually and through campaigns also,Video call,5,5,5,5

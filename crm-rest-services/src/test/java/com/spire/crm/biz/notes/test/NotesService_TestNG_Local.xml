@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Notes-Service Testscripts" preserve-order="true">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<test name="Notes-Service - Sanity">
+		<groups>
+			<run>
+			    <include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.biz.notes.test" />
+		</packages>
+	</test>
+
+</suite>               
+        
+   

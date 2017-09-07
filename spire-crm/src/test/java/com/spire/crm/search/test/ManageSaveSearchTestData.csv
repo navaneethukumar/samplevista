@@ -1,0 +1,6 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SearchBean.SearchCriteria.0,SearchBean.SearchType.0,SearchBean.SearchOperation.0,SearchBean.SearchCriteria.1,SearchBean.SearchType.1
+1,verifySaveSearch_SingleSkillSanity,oracle,Skill,,,
+2,verifySaveSearch_SingleSkillSanity,bengaluru area,Location,,,
+3,verifySaveSearch_SingleSkillSanity,btech,Qualification,,,
+4,verifySaveSearch_TwoAttributeSRG,oracle,Skill,AND,accenture,Company
+5,verifySaveSearch_TwoAttributeSRG,mumbai,Location,AND,open web,Source Type

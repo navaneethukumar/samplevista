@@ -1,0 +1,2 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.TestTags,TestData.TestSteps
+1,verfiyGetUserDetails_Sanity,Create,Steps : # API : POST /Weight# Action : Create a weight by giving valid input data # Expected : weight should be created 

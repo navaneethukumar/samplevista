@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="LRG-Automation" parallel="tests" thread-count="5">
+
+	<test name="ConfigMgmt Testscripts - LRG">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.config" />
+		</packages>
+	</test>
+	<test name="Engagement score new Testscripts - LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.EngagementScoreNew.test" />
+		</packages>
+	</test>
+	<test name="BlobStoreService - LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.blob.store.test" />
+		</packages>
+	</test>
+	<test name="CrmProfilesService - LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.profile.test" />
+		</packages>
+	</test>
+	<test name="CrmRulesService - LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.rule.test" />
+		</packages>
+	</test>
+	<test name="SocialService - LRG" parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.social.test" />
+		</packages>
+	</test>
+	<test name="Kafka Async Testscripts - LRG">
+		<groups>
+
+			<run>
+				<include name="LRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+	<test name="ActivityStream_Entity Testscripts - LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.entity.activity.stream.test" />
+		</packages>
+	</test>
+	<test name="New Labels biz Service Testscripts - LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+
+	<test name="ASSETS Entity Testscripts - LRG">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.entity.assets.test" />
+		</packages>
+	</test>
+
+	<test name="JobPost Testscripts - SANITY,SRG,LRG" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.job.post.test" />
+		</packages>
+	</test>
+
+</suite>
+

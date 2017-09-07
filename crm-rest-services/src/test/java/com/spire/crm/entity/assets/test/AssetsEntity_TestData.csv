@@ -1,0 +1,30 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.data,TestData.TestSteps
+1,verifyCreateAsset_Sanity,doc,create Asset by uploading doc file
+2,verifyCreateAsset_Sanity,pdf,create Asset by uploading pdf file
+3,verifyCreateAsset_SRG,audio,create Asset by uploading audio file
+4,verifyCreateAsset_SRG,video,create Asset by uploading vedio file
+5,verifyAttachSingleAsset_LRG,NonExisting,Attach asset which is not existing
+6,verifyAttachSingleAsset_SRG,doc,Attach single Entity to the asset which is doc
+7,verifyAttachSingleAsset_SRG,pdf,Attach single Entity to the asset which is pdf
+8,verifyAttachSingleAsset_SRG,audio,Attach single Entity to the asset which is audio
+9,verifyAttachSingleAsset_SRG,video,Attach single Entity to the asset which is video
+10,verifyDetachSingleAsset_SRG,singleDetach,Detach single Entity to the assetId
+11,verifyAttachAssets_Sanity,SingAssetSingEntity,Attach single Entity to the single assetId
+12,verifyAttachAssets_SRG,MulAssetSingEntity,Attach single Entity to  Multiple assetIds
+13,verifyAttachAssets_SRG,SingAssetMulEntity,Attach Multiple Entitys to  single assetId
+14,verifyAttachAssets_SRG,MulAssetMulEntity,Attach Multiple Entitys to  Multiple assetIds
+15,verifyDetachAssets_Sanity,SingAssetSingEntity,Detach single Entity to the single assetId
+16,verifyDetachAssets_SRG,MulAssetSingEntity,Detach single Entity to  Multiple assetIds
+17,verifyDetachAssets_SRG,SingAssetMulEntity,Detach Multiple Entitys to  single assetId
+18,verifyDetachAssets_SRG,MulAssetMulEntity,Detach Multiple Entitys to  Multiple assetIds
+19,verifyListAsset_Sanity,Empty,Verify listAsset without giving any entiytId
+20,verifyListAsset_SRG,Existing,verify listAsset by giving existing entiytId
+21,verifyListAsset_LRG,NonExisting,verify listAsset by giving non  existing entiytId
+22,verifyModifyAsset_Sanity,update,Update assetName with new Name
+23,verifyDeleteAsset_Sanity,pdf,delete asset which is pdf
+24,verifyDeleteAsset_SRG,doc,delete Asset which is doc
+25,verifyDeleteAsset_SRG,audio,delete asset which is audio
+26,verifyDeleteAsset_SRG,video,delete asset which is video
+27,verifyDeleteAsset_LRG,NonExisting,delete non existing asset
+28,verifyGetAsset_Sanity,Existing,get assets by giving assetId
+29,verifyGetAsset_LRG1,NonExisting,get proper exception by giving non existing asset

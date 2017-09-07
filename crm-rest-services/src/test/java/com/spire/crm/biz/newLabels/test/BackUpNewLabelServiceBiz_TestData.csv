@@ -1,0 +1,55 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.data,TestData.TestSteps
+1,createLabel_Sanity,PRIVATE,create label by giving labelName and scope as private
+2,createLabel_Sanity,PUBLIC,create label by giving labelName and scope as public
+3,createLabel_LRG,duplicatePrivate,create label by giving duplicate name and scope as private need to give proper message
+4,createLabel_LRG,duplicatePublic,create label by giving duplicate name and scope as public  need to give proper message
+5,createLabel_LRG,differentScope,create label by giving scope as private for the samelabel again create with the scope as public need to throw proper exception
+6,attachLabelsToEntity_Sanity,PRIVATE,Create label  with scope as private and attach labels to Entity and validate by listProfiles
+7,attachLabelsToEntity_Sanity,PUBLIC,create label with scope as public and attach labels to Entity and validate by listProfiles
+8,attachLabelsToEntity_LRG,duplicatePrivate,"Attach label by giving duplicate name and scope as private, give the same entityId which is attached first to that labelName need to throw proper exception"
+9,attachLabelsToEntity_LRG,duplicatePublic,"Attach label by giving duplicate name and scope as public, give the same entityId which is attached first to that labelName need to throw proper exception"
+10,createLabels_Sanity,PRIVATE,Create bulk labels at a time by giving labelNames and scope as public and verify by listLabels
+11,createLabels_Sanity,PUBLIC,create bulk labels at a time by giving labelNames and scope as private and verify by listLabels
+12,attachLabelsToEntities_Sanity,PRIVATE,create labels with scope as private and attach labels to entities and verify by listProfiles 
+13,attachLabelsToEntities_Sanity,PUBLIC,create labels with scope as public  and attach labels to entities and verify by listProfiles 
+14,attachLabelsToEntities_LRG,duplicatePrivate,"Attach label by giving duplicate name and scope as private ,give the same entityIds which is attached first to that labelName need to throw proper exception"
+15,attachLabelsToEntities_LRG,duplicatePublic,"Attach label by giving duplicate name and scope as public, give the same entityIds which is attached first to that labelName need to throw proper exception"
+16,detachLabelsToEntity_Sanity,PRIVATE,Create label  with scope as private and attach labels to Entity and detach that attached entity and validate by listProfiles
+17,detachLabelsToEntity_Sanity,PUBLIC,Create label  with scope as public  and attach labels to Entity and detach that attached entity and validate by listProfiles
+18,detachLabelsToEntity_LRG,duplicatePrivate,detach  label by giving duplicate name and scope as private and give the same entityId which are detached previously  to that labelName need to throw proper exception
+19,detachLabelsToEntity_LRG,duplicatePublic,detach  label by giving duplicate name and scope as public and give the same entityId which are detached previously  to that labelName need to throw proper exception
+20,detachLabelsToEntities_Sanity,PRIVATE,Create label  with scope as private and attach labels to Entities  and detach that attached entities and validate by listProfiles
+21,detachLabelsToEntities_Sanity,PUBLIC,Create label  with scope as public  and attach labels to Entities and detach that attached entities and validate by listProfiles
+22,detachLabelsToEntities_LRG,duplicatePrivate,"detach  label by giving duplicate name and scope as private , give the same entityIds which are detached previously  to that labelName need to throw proper exception"
+23,detachLabelsToEntities_LRG,duplicatePublic,"detach  label by giving duplicate name and scope as public, give the same entityIds which are detached previously  to that labelName need to throw proper exception"
+24,removeLabel_Sanity,PRIVATE,Create label with scope as private and remove that label and verify by listLabels
+25,removeLabel_Sanity,PUBLIC,Create label with scope as public and remove that label and verify by listLabels
+26,removeLabel_LRG,invalid,Remove the label by giving invalid labelId need to throw proper exception
+27,removeLabels_Sanity,PRIVATE,Create bulk  labels with scope as private and remove that labels and verify by listLabels
+28,removeLabels_Sanity,PUBLIC,Create bulk  labels with scope as public and remove that labels and verify by listLabels
+29,removeLabels_LRG,invalid,"Create bulk  labels and remove that labels with one invalid labeld,it need to remove all valid labelIds and verify by listLabels"
+30,listLabels_Sanity,PRIVATE,"create label as private and list that label without giving limit,offset and daterange"
+31,listLabels_Sanity,PUBLIC,"create label as public and list that label without giving limit,offset and daterange"
+32,listLabels_SRG,PRIVATE,"create label as private and list that label with  giving limit,offset and daterange based on the given information it need to dispaly labels"
+33,listLabels_SRG,PUBLIC,"create label as public and list that label with  giving limit,offset and daterange based on the given information it need to dispaly labels"
+34,listProfiles_Sanity,PRIVATE,"create label with scope as private and attach it to entity and verify by listProfiles without giving limit,offset and daterange"
+35,listProfiles_Sanity,PUBLIC,"create label with scope as public and attach it to entity and verify by listProfiles without giving limit,offset and daterange"
+36,listProfiles_SRG,PRIVATE,"create label with scope as private and attach it to entity and verify by listProfiles by giving limit,offset and daterange"
+37,listProfiles_SRG,PUBLIC,"create label with scope as public and attach it to entity and verify by listProfiles by giving limit,offset and daterange"
+38,listProfiles_LRG,invalid,List profiles by giving invalid labelId
+39,filterLabels_Sanity,PRIVATE,"Filter labels by giving labelName,labelId and entityId by creating label with private scope"
+40,filterLabels_Sanity,PUBLIC,"Filter labels by giving labelName,labelId and entityId by creating label with public scope"
+41,filterLabelsPrivate_SRG,SinglelabelId,filter label by giving single labelId
+42,filterLabelsPublic_SRG,SinglelabelId,filter label by giving single labelId
+43,filterLabelsPrivate_SRG,MultipleLabelIds,filter labels by giving multiple valid labelIds
+44,filterLabelsPublic_SRG,MultipleLabelIds,filter labels by giving multiple valid labelIds
+45,filterLabelsPrivate_SRG,MultiplelabelNames,filter labels by giving valid labelNames which are created
+46,filterLabelsPublic_SRG,MultiplelabelNames,filter labels by giving valid labelNames which are created
+47,filterLabelsPrivate_SRG,MultipleEntityIds,filter labels by giving entityIds that are attached to labels
+48,filterLabelsPublic_SRG,MultipleEntityIds,filter labels by giving entityIds that are attached to labels
+49,filterLabelsPrivate_LRG,MulLabelIdsWithOneInvalid,filter labels by giving multiple labelIds with one invalid labelId it need to display thedetails of all valid LabelIds
+50,filterLabelsPublic_LRG,MulLabelIdsWithOneInvalid,filter labels by giving multiple labelIds with one invalid labelId it need to display thedetails of all valid LabelIds
+51,filterLabelsPrivate_LRG,MulLabelNamesWithOneInvalid,filter labels by giving multiple labelIds with one invalid labelId it need to display thedetails of all valid LabelIds
+52,filterLabelsPublic_LRG,MulLabelNamesWithOneInvalid,filter labels by giving multiple labelIds with one invalid labelId it need to display thedetails of all valid LabelIds
+53,filterLabelsPrivate_LRG,MultipleEntityIdsWithOneInvalid,filter labels by giving multiple entityIds with one invalid entityId it need to display the details of all valid entityIds that are attached to labels
+54,filterLabelsPublic_LRG,MultipleEntityIdsWithOneInvalid,filter labels by giving multiple entityIds with one invalid entityId it need to display the details of all valid entityIds that are attached to labels

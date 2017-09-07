@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="SpireConfigWeb Testscripts" preserve-order="true">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="SERVICE_NAME" value="CRM-SERVICE" />
+	<test name="SpireConfigWebService - Sanity">
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.entity.config.web.test" />
+		</packages>
+	</test>
+
+	<test name="SpireConfigWebService - SRG">
+		<groups>
+			<run>
+				<include name="RG" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.entity.config.web.test" />
+		</packages>
+	</test>
+</suite>               
+        
+   

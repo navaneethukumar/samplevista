@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="ConfigMgmt Testscripts" parallel="tests"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+
+	<test name="ConfigMgmt Testscripts">
+		<groups>
+			<run>
+
+				<include name="configDefault_Sanity" />
+			 	<include name="configDefault_SRG" />
+				<include name="configDefault_LRG" />
+
+
+				<include name="configTest_Sanity" />
+				<include name="configTest_SRG" />
+				<include name="configTest_LRG" /> 
+
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.config" />
+		</packages>
+	</test>
+
+</suite>               
+        
+   

@@ -1,0 +1,9 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps
+1,verifyFetchCandidate_Sanity,Verify user is able to get candidates from reids
+2,verifyFetchWhenRedisDown_Sanity,"Verify user is able to get candidates from ES,when redis is down "
+3,verifyRequisitionFetch_Sanity,"Verify user is able to get requisition from ES,when redis is down "
+4,verifyFlushAndFetch_Sanity,"Verify user is able to get requisition from ES,when redis is down "
+5,verifyFetchMultipleCandidate_Sanity,"Verify user is able to get multiple candidates from ES,when redis is down "
+6,verifyPartialFetch_Sanity,"Verify user is able to get multiple candidates from ES,when redis is down "
+7,verifyBulkFetchCandidate_Sanity,Verify user is able to get 100 candidates from ES
+8,verifyFetchInvalidCandidate_Sanity,Verify invalid candidate id is coming in failuer

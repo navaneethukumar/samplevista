@@ -1,0 +1,12 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps,BlobStoreEntity.tenantID,BlobStoreEntity.ruleName,BlobStoreEntity.ruleValue
+1,verifyCreateDeleteRule_Sanity,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Dynamic,Dynamic
+2,verifyDuplicateRule_LRG,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Dynamic,Dynamic
+3,verifyCreatRule_LRG,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Dynamic,Dynamic
+4,verifyCreatRule_LRG,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Dynamic,Static
+5,updateRule_Sanity,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Dynamic,Dynamic
+6,updateRule_SRG,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Update,Dynamic
+7,updateRule_LRG,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Dynamic,Dynamic
+8,getRuleByTenant_Sanity,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,7878,Dynamic,Dynamic
+9,getRuleByTenant_LRG1,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,1,Invalid,Dynamic
+10,getRuleByName_ID_LRG,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,1,Invalid,Dynamic
+11,verifyDeleteRule_LRG,Steps : # API : POST /blob_store# Action : Create a Blob Store rule by giving valid input data # Expected : Rule should be created ,1,Invalid,Dynamic

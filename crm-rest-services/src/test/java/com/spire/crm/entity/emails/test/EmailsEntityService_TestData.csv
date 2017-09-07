@@ -1,0 +1,13 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps,Template.name,Template.subject,Template.contentBody,Template.contentSignature,Template.createdByName,Template.modifiedByName,EmailQueryParamPojo.limit,EmailQueryParamPojo.offset,SendEmailInputVO.fromEmail,SendCustomEmailInputVO.fromEmail,SendCustomEmailInputVO.subject,SendCustomEmailInputVO.content
+1,verify_getListTemplates,VerifyListTemplates,s,s,a,ass,Spire,Spire,10,0,y,p,p,p
+2,verify_createTemplates,verify_createTemaplates,one,one,one,one,Spire,Spire,10,0,y,p,p,p
+3,verify_deleteTemplate,test,rr,rr,rr,rr,Spire,Spire,10,0,y,p,p,p
+4,verify_editTemplate,verifyeditTemplate,rr,rr,rr,rr,Spire,Spire,10,0,y,p,p,p
+5,verify_sendEmails,verifysenEmails,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,p,p,p
+6,verify_sendCustomEmails,verifysendCustomEmails,rr,CustomSubject,CustomBody,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,CustomMail,We have Many Opening 
+7,verify_getTemplate,verifygetTemplate,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,CustomMail,We have Many Opening 
+8,verify_getMessageId,verifygetMessageId,rr,Subject,TemplatecontentBody,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,CustomMail,We have Many Opening 
+9,verify_markEmailAsRead,verifymarkEmailAsRead,rr,Subject,TemplatecontentBody,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,CustomMail,We have Many Opening 
+10,verify_sendBulkEmails,verifysendBulkEmails,rr,Subject,TemplatecontentBody,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,CustomMailBulk,We have Many OpeningBulk 
+11,verify_sendCustomEmailsBulk,verifysendCustomEmailsBulk,rr,Subject,TemplatecontentBody,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,CustomMailBUlk,BUlkWe have Many Opening 
+12,verify_unsubscribeCandidate,verifyunsubscribeCandidate,rr,Subject,TemplatecontentBody,rr,Spire,Spire,10,0,sandeep@gmail.com,jagadeesh.jayachandra@spire2grow.com,CustomMailBUlk,BUlkWe have Many Opening 

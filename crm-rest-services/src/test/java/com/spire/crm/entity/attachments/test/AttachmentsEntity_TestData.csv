@@ -1,0 +1,7 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.data,TestData.TestSteps
+1,verifyCreateAttachment_Sanity,,creating Attachments
+2,verifyListAttachment_Sanity,,list Attachments by candidateId
+3,verifyUpdateAttachment_Sanity,,update Attachment
+4,verifyDeleteAttachment_Sanity,,delete Attachment
+5,verifyGetAttachmentById_Sanity,,get Attachment byAttachmentID
+6,verifyGetAttachmentByLink1_Sanity,,get Attachment by Link

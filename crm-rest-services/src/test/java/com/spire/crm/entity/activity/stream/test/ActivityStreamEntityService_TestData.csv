@@ -1,0 +1,85 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.data,TestData.TestSteps,Activity.ActivityType,Activity.Action,TestData.exception
+1,createActivity_Sanity,Response,Create Activity and validtate from created response,COMMUNICATION,SENT,NO
+2,createActivity_Sanity,ActivityId,Create Activity and validtate by getByActivityId,COMMUNICATION,SENT,NO
+3,createActivity_Sanity,PersonId,Create Activity and validtate by getByProfileId,COMMUNICATION,SENT,NO
+4,createActivity_SRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,LIFECYCLE,SENT,NO
+5,createActivity_SRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,NOTIFICATION,SENT,NO
+6,createActivity_SRG1,null,"Create Activity without giving Action, it shouldnot create",LIFECYCLE,null,EXCEPTION
+7,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,ADD,NO
+8,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,ATTACH,NO
+9,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,CANDIDATE_UPDATE,NO
+10,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,CHANGED,NO
+11,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,CREATE,NO
+12,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,DECREASE,NO
+13,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,DELETE,NO
+14,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,DETACH,NO
+15,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,IDENTIFIED,NO
+16,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,INCREASE,NO
+17,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,JOBPOST,NO
+18,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,MADE,NO
+19,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,POOL_UPDATE,NO
+20,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,READ,NO
+21,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,RECEIVED,NO
+22,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,REMOVE,NO
+23,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,REPLIED,NO
+24,createActivity_LRG,ActivityId,Create Activity with different activityType and validtate by getByActivityId,COMMUNICATION,REQUISITION_UPDATE,NO
+25,createCustomActivity_SRG1,Actor,"Create an activity by giving ActivityType, Action, and Actor",COMMUNICATION,SENT,NO
+26,createCustomActivity_SRG,Actor_Object,"Create an activity by giving ActivityType, Action, Actor and Object",COMMUNICATION,SENT,NO
+27,createCustomActivity_SRG1,Actor_Target,"Create an activity by giving ActivityType, Action, Actor and Target",COMMUNICATION,SENT,NO
+28,listActivity_Sanity,10,"Create some activities and list activities by personId, it should show created number of activities",COMMUNICATION,SENT,NO
+29,listActivity_Sanity,5,"Create some activities and list activities by personId, it should list given number of activities limit given",COMMUNICATION,SENT,NO
+30,listActivitySearchText_Sanity,Valid,Create an Activity and list activities by giving text from created activity,COMMUNICATION,SENT,NO
+31,listActivitySearchText_SRG1,Invalid,Search invalid text,COMMUNICATION,SENT,EXCEPTION
+32,createBulkActivity_Sanity,Response,Create bulk activities and validate from created response,COMMUNICATION,SENT,NO
+33,createBulkActivity_Sanity,ActivityId,Create bulk activities and validate by created activityId,COMMUNICATION,SENT,NO
+34,createBulkActivity_Sanity,PersonId,Create bulk activities and validate by personId,COMMUNICATION,SENT,NO
+35,invalidSearch_SRG,ActivityId,Search by invalid activityId,null,null,EXCEPTION
+36,invalidSearch_SRG1,PersonId,Search by invalid PersonId,null,null,EXCEPTION
+37,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,READ,NO
+38,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,UPDATE,NO
+39,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,DELETE,NO
+40,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,SENT,NO
+41,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,REPLIED,NO
+42,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,VIEW,NO
+43,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,CHANGED,NO
+44,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,IDENTIFIED,NO
+45,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,ATTACH,NO
+46,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,DETACH,NO
+47,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,INCREASE,NO
+48,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,DECREASE,NO
+49,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,ADD,NO
+50,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,REMOVE,NO
+51,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,SUBMIT,NO
+52,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,RECEIVED,NO
+53,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,MADE,NO
+54,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,JOBPOST,NO
+55,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,REQUISITION_UPDATE,NO
+56,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,POOL_UPDATE,NO
+57,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTIFICATION,CANDIDATE_UPDATE,NO
+58,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,READ,NO
+59,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,UPDATE,NO
+60,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,DELETE,NO
+61,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,SENT,NO
+62,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,REPLIED,NO
+63,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,VIEW,NO
+64,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,CHANGED,NO
+65,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,IDENTIFIED,NO
+66,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,ATTACH,NO
+67,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,DETACH,NO
+68,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,INCREASE,NO
+69,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,DECREASE,NO
+70,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,ADD,NO
+71,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,REMOVE,NO
+72,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,SUBMIT,NO
+73,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,RECEIVED,NO
+74,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,MADE,NO
+75,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,JOBPOST,NO
+76,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,REQUISITION_UPDATE,NO
+77,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,POOL_UPDATE,NO
+78,createActivity_Sanity,Response,Create Activity and validtate from created response,LIFECYCLE,CANDIDATE_UPDATE,NO
+79,createActivity_Sanity,Response,Create Activity and validtate from created response,NOTES,READ,NO
+80,createActivity_Meta_Sanity,null,"Create Activity without meta field, activity should be created with Originator as USER",COMMUNICATION,SENT,NO
+81,createActivity_Meta_Sanity,USER,"Create Activity without meta field, activity should be created with Originator as USER",COMMUNICATION,SENT,NO
+82,createActivity_Meta_Sanity,SYSTEM,"Create Activity without meta field, activity should be created with Originator as USER",COMMUNICATION,SENT,NO
+83,listActivitiesByMeta_Sanity,null,Create activity as Campaign generated activity and list meta activities by giving Originator as SYSTEM and subType as CAMPAIGN,COMMUNICATION,SENT,NO
+84,updateAnActivity_Sanity,null,"Create an activity and update the ReadAndUnReadStatus, validate the status is updated",COMMUNICATION,SENT,NO

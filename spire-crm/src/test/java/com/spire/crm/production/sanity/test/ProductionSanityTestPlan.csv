@@ -1,0 +1,9 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SearchBizBean.client,SearchBean.SearchQuery,SearchBean.SearchAttributeMap,SearchBizBean.searchQueryString
+1,verifyUserService,,,,
+2,verifyLoginSuccess,,,,
+3,verifyHomePageRenderedSuccessfully,,,,
+4,verifySearchAndResults,,,,
+5,verifyProfilePageRenderedWithAllContents,,,,
+6,verifyNotifications1,,,,
+7,verifySearchForAcquraAndAll,all,"{""searchQueryString"":""skill:java""","""searchAttributeMap"":{""skill"":[""java""]}}",skill:java
+8,verifySearchForAcquraAndAll,acqura,"{""searchQueryString"":""skill:java""","""searchAttributeMap"":{""skill"":[""java""]}}",skill:java

@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="userId" value="tester@logica.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="ui_host" value="http://staging.vista.corp.spire.com/UI/src/app/index.html#/" />
+	<parameter name="testRetryCount" value="2" />
+	<parameter name="selenium_grid" value="true" />
+	
+	
+	<test name="Search UI - ValidateSearchResultFacetingProfileSanity" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="verifyProfileSkillLinkSanity" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+
+	<!-- 
+	<test name="Search UI - verifySearchByAttributesSanity" parallel="methods"
+		thread-count="8">
+		<groups>
+			<run>
+				<include name="verifySearchByAttributesSanity" />     
+			</run>     
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchByAttributesSRG">
+		<groups>
+			<run>
+				<include name="verifySearchByAttributesSRG" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByAttributesSRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByAttributesSRG" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByAttributesSanity">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByAttributesSanity" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchByAttributesLRG">
+		<groups>
+			<run>
+				<include name="verifySearchByAttributesLRG" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByAttributesLRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByAttributesLRG" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByFullParanthesisLRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFullParanthesisLRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchBySingleAttributeSanity">
+		<groups>
+			<run>
+				<include name="verifySearchBySingleAttributeSanity" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyFreetextSearchBySearchBarSRG">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchBySearchBarSRG" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyFreetextSearchByAdvSearchSRG">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchByAdvSearchSRG" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyFreetextSearchBySearchBarSanity">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchBySearchBarSanity" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyFreetextSearchByAdvSearchSanity">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchByAdvSearchSanity" />  
+			</run>   
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyFreetextSearchBySearchBarLRG">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchBySearchBarLRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyFreetextSearchByAdvSearchLRG">
+		<groups>
+			<run>
+				<include name="verifyFreetextSearchByAdvSearchLRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchBySingleAttributeSRG">
+		<groups>
+			<run>
+				<include name="verifySearchBySingleAttributeSRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByFullParanthesisSRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFullParanthesisSRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchByFullParanthesisSanity">
+		<groups>
+			<run>
+				<include name="verifySearchByFullParanthesisSanity" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchByFullParanthesisSRG">
+		<groups>
+			<run>
+				<include name="verifySearchByFullParanthesisSRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifySearchByFullParanthesisLRG">
+		<groups>
+			<run>
+				<include name="verifySearchByFullParanthesisLRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByFullParanthesisSanity">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFullParanthesisSanity" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByFreetextCombWithGuidedSanity">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFreetextCombWithGuidedSanity" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByFreetextCombWithGuidedSRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFreetextCombWithGuidedSRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyAdvanceSearchByFreetextCombWithGuidedLRG">
+		<groups>
+			<run>
+				<include name="verifyAdvanceSearchByFreetextCombWithGuidedLRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyRequisitionSearchSanity">
+		<groups>
+			<run>
+				<include name="verifyRequisitionSearchSanity" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - verifyRequisitionSearchSRG">
+		<groups>
+			<run>
+				<include name="verifyRequisitionSearchSRG" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.SearchTestPlan" />
+   		</classes>
+	</test>
+	
+	<test name="Search UI - ManageSaveSearchSanity">
+		<groups>
+			<run>
+				<include name="ManageSaveSearchSanity" />    
+			</run>   
+		</groups>  
+		<classes>
+      		<class name="com.spire.crm.search.test.ManageSaveSearchTestPlan" />
+   		</classes>
+	</test> -->
+	
+</suite>   
+
+

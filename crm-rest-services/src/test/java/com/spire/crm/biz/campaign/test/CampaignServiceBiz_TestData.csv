@@ -1,0 +1,41 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.TestData,TestData.data,TestData.TestSteps
+1,createCampaign_Sanity,FULL,published,create campaign with all the nodes 
+2,createCampaign_Sanity,FULL,unpublished,create campaign with all the nodes 
+3,eidtCampaign_Sanity,FULL,published,create campaign with all the nodes 
+4,eidtCampaign_Sanity,FULL,unpublished,create campaign with all the nodes 
+5,changeStage_SRG,null,Applicant,Verify the batch execution and candidate stage is chaning to applicant after executin the batch 
+6,listCampaign_Sanity,published,All,verify the list is displaying the list of campaigns 
+7,listCampaign_Sanity,unpublished,All,verify the list is displaying the list of campaigns 
+8,deleteCampaign_Sanity,null,UnPublished,Delete the published Campaign
+9,deleteCampaign_Sanity,null,Published,Delete the published Campaign
+10,deleteBulkCampaign_Sanity,3,UnPublished,Delete the Unpublished Campaign
+11,deleteBulkCampaign_Sanity,3,Published,Delete the published Campaign
+12,getCampaignById_Sanity,FULL,Published,Verify get campaign by id and projection 
+13,getCampaignById_Sanity,BASIC,Published,Verify get campaign by id and projection 
+14,addCamptoNoStage_Sanity,NA,Lead,"Verify candidate stage is changed to lead,when campaign is added"
+15,removeCampfromCandidate_Sanity,NA,NA,Verify added campaigns are able to remove from candidate
+16,changeStage_Sanity,NA,Applicant,Verify the change stage node is executing and changing the stage of the candidate to Applicant
+17,changeStage_Sanity,NA,Engaged,Verify the change stage node is executing and changing the stage of the candidate to Engaged
+18,readEmailDecisionCampaign_Sanity,NA,ReadEmail,Verify creating one decision(ReadEmail) Campaign
+19,repliedEmailDecisionCampaign_Sanity,NA,RepliedEmail,Verify creating one decision(ReadEmail) Campaign
+20,ReadEmailExecution_Sanity1,NA,ReadEmail,Verify the execution of decision no node Test
+21,repliedEmailExecution_Sanity1,NA,RepliedEmail,Verify the execution of decision no node Test
+22,readYesNodeExecution_Sanity_1,NA,ReadEmail,Verify the execution of decision yes node Test for Read email
+23,repliedYesNodeExecution_Sanity,NA,RepliedEmail,Verify the execution of decision yes node Test for replied email
+24,sentActivity_Sanity,NA,Activity,Verify the activity is created after sending email 
+25,campaignCandidates_SRG,NA,campaignCandidates,Verify the Candidates added to the campaign are displayed 
+26,cloneCampaign_Sanity,published,FULL,Verify the clone  campaign
+27,cloneCampaign_Sanity,unpublished,FULL,Verify the clone  campaign
+28,campaignReports_SRG,NA,null,Verify the campaign report service is displaying all the details
+29,addcandidatetoCamp_Sanity,NA,Applicant,Verify the change stage node is executing and changing the stage of the candidate to Applicant
+30,candidateCampaigns_Sanity,published,Lead,Verify the Campaigns are displayed under candidate
+31,addcandidatetoCamp_Sanity,published,Lead,Verify the Campaigns are displayed under candidate
+32,freezeCampaign_SRG,published,Lead,Verify the user is able to freeze the campaign.
+33,unfreezeCampaign_SRG,published,Lead,Verify the user is able to unfreeze the freezed campaign.
+34,candidatesAtNode_SRG,NA,campaignCandidates,Verify  user is able to get the candidates at each node
+35,getLeadsForCampaign_SRG,NA,Lead,Verify  user is able to get the candidates of a campaign
+35,getExecutedNodes_SRG,NA,Lead,Verify  user is able to get the candidates of a campaign
+36,markReplied_LRG,NA,NA,Verify bad request id message is displaying for invalid message id 
+37,markRead_LRG,NA,NA,Verify bad request id message is displaying for invalid message id 
+38,batchexecution_Sanity,NA,NA,Verify bad request id message is displaying for invalid message id 
+39,changeStageUserName_SRG,NA,NA,Verify change stage activity is created by campaign added user 

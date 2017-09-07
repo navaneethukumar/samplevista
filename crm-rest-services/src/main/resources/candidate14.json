@@ -1,0 +1,41 @@
+[
+{
+	"candidate": {
+		"id": null,
+		"displayId": null,
+		"firstName": "sony",
+		"candidateSkillMapBean": {
+			"links": null,
+			"items": [{
+				"id": null,
+				"candidateId": null,
+				"skill": "oracle",
+				"skillExprncMnth": null,
+				"skillPrfcncy": null,
+				"skillStrength": 1.0,
+				"skillOccurrence": null,
+				"skillIndex": null,
+				"skillRecencyGap": null,
+				"createdBy": null,
+				"createdOn": null,
+				"updatedBy": null,
+				"updatedOn": null,
+				"flowId": null
+			}],
+			"hasMore": false,
+			"totalResults": 0
+		}
+	},
+	"social": {
+		"id": null,
+		"candidateId": null,
+		"interests": null,
+		"hobbies": null,
+		"professionalSummary": null,
+		"objective": null,
+		"stackoverflowRank": null,
+		"imageUrl": null,
+		"linkedinUrl": "https://in.linkedin.com/in/abhijit-mahesh-9b9b0835"
+	}
+}
+]

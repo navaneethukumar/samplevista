@@ -1,0 +1,12 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps,EmailBean.templateName,EmailBean.subject,EmailBean.body,EmailBean.signature
+1,VerifyElementsPresent,Login and verify all emailTemplate elements,,,,
+2,CreateNewTemplate,Login and create new template,TestTemplate,Testing Openings,,
+3,CreateFeedbackTemplate,Login and createFeedback new template,,,,
+4,CreateRichTextTemplate,Login and create ichText new template,RichTextTemplate,Testing Openings,,
+5,DeleteTemplate,Login and create new template and delete it,TestTemplate,Testing Openings,,
+6,EditTemplate,Login and create a template and edit it,TestTemplate,Testing Openings,,
+7,ValidateDynamicFieldOfEmail,Login and create template using dynamic template,TestTemplate,Testing Openings,,
+8,SendEmail,Login and create a template and create a candiadte n send email to that candiadte,TestTemplate,Testing Openings
+9,SendEmailWithFeedback,Login and create a feedback template and create a candiadte n send feedback email to that candiadte,TestTemplate,Testing Openings
+10,sentEmailNverifyES,send email to a candidate and verify the ES,TestTemplate,Testing Openings
+11,scheduleEmail,scheduleEmail

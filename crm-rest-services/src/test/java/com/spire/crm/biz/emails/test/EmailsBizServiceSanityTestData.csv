@@ -1,0 +1,4 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps
+1,verify_RecruiterFields,verify_RecruiterFields
+2,verify_NtoficationForUnsubscribe,#Verify notification is created for unsubscribed candidate
+3,verify_remindMe,#Verify remind me for candidate 

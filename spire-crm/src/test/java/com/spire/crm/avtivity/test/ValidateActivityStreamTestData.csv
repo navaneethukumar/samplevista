@@ -1,0 +1,5 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,ValidateActivityStreamData," ""#Action: Login and verify ActivityStreamData Home page #Expected: After login In home page activity stream all icons like campaigns, tags,email and candidate activity logs should be displayed."
+2,ValidateEmailLink,"#Action: Login and verify Pagination is displayed if avtivities are more than 10, and verify all activity pages containing not more than 10 activityies. #Expected: If avitivities are more than 10 it should display pagination and all pages shoould display max of 10 activitie."
+3,ValidateCandidateNameLink, #Action: Login and verify in activity stream email logs link #Expected: If we click on email link it should display the email sent to the candidate by opening new small window.
+4,ValidatePagination, #Action: Login and verify candidate's nameLink in activityStream logs #Expected: In activity stream logs if we click on candidate name link it should display the corresponding candidate details page.

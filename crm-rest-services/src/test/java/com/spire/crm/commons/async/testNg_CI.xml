@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="ConfigMgmt Testscripts" parallel="methods"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+
+	<parameter name="testRetryCount" value="20" />
+	<parameter name="testRetryInterval" value="50" />
+
+
+	<test name="Kafka Async Testscripts - Sanity">
+		<groups>
+
+			<run>
+				<include name="Sanity" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+
+	<test name="Kafka Async Testscripts - SRG">
+		<groups>
+
+			<run>
+				<include name="SRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+
+
+	<test name="Kafka Async Testscripts - LRG">
+		<groups>
+
+			<run>
+				<include name="LRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.commons.async" />
+		</packages>
+	</test>
+
+
+
+
+</suite>               
+        
+   

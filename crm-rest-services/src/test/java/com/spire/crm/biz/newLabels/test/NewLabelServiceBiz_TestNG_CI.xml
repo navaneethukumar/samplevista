@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="New Label Service" parallel="tests" thread-count="10">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+
+	<test name="NewLabelServiceBiz Testscripts - Sanity">
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+
+	<test name="NewLabelServiceBiz Testscripts - SRG">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+
+	<test name="NewLabelServiceBiz Testscripts - LRG">
+		<groups>
+			<run>
+				<include name="LRG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.newLabels.test" />
+		</packages>
+	</test>
+
+</suite>               
+        
+   

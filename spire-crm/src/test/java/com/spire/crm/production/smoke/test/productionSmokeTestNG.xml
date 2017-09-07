@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="testRetryCount" value="3" />
+	
+		<test
+		name="CRM UI Automation - Production Smoke TestScripts For TEST Tenant" parallel="methods"
+		thread-count="8">
+		<parameter name="ui_host"
+			value="https://testvista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="userId" value="crm@test.com" />
+		<parameter name="password" value="Spire@123" />
+		<parameter name="db_host"
+			value="mysql-prod-db.clapjg0gnhyn.us-east-1.rds.amazonaws.com" />
+		<parameter name="db_password" value="SpireAiZie1qu123" />
+		<parameter name="schemaName" value="test_schema" />
+		<parameter name="searchHostName" value="lb-services-midtier.spire2grow.com:8381" />
+
+		<groups>
+			<run>
+				<include name="verifyProfileCreation" />
+				<include name="verifyActivityCreation" />
+				<include name="verifyProfileUpdation" />
+				<include name="verifyProfileDetailsDeletion" />
+				<include name="verifySkillsAddition" />
+				<include name="verifyActivityElements" />
+				<include name="verifyCreateEmailTemplate" />
+				<include name="verifyCloneCampaign" />
+				<include name="verifySearchResults" />
+				<include name="verifyAttachLabel" />
+				<include name="verifyHomePageElements" />
+				<include name="verifyPipeline" />
+				<!-- <include name="uploadFile" /> -->
+				<include name="createNewJobPost" />
+				<include name="postJobFromURL" />
+				<include name="verifyEngagementScore" />
+				<include name="verifySimilarProfiles" />
+
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.smoke.test" />
+		</packages>
+	</test>
+
+</suite>   
+
+

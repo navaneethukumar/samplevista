@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Authorization Service" parallel="methods"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="testRetryCount" value="20" />
+	<parameter name="testRetryInterval" value="50" />
+
+	
+	<parameter name="healthCheck" value="false" />  
+	<parameter name="ui_host" value="http://test.vista.corp.spire.com/" />
+	<parameter name="biz_host" value="192.168.2.124" />
+	<parameter name="db_host" value="://192.168.2.185"/>
+	<parameter name="entity_host" value="192.168.2.69" />
+	<parameter name="mautic_host" value="://192.168.2.185:8085" />
+	<parameter name="environment_type" value="Test" />
+
+	<test name="Authorization Service - Sanity">
+		<groups>
+
+			<run>
+				<include name="Sanity" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.authorization.test" />
+		</packages>
+	</test>
+
+	<test name="CRMPIPELINE Service - SRG">
+		<groups>
+
+			<run>
+				<include name="SRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.authorization.test" />
+		</packages>
+	</test>
+	
+	<test name="CRMPIPELINE Service - LRG">
+		<groups>
+
+			<run>
+				<include name="LRG" />
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.authorization.test" />
+		</packages>
+	</test>
+
+
+</suite>               
+        
+   

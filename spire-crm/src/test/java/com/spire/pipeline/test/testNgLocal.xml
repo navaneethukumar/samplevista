@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+	<parameter name="testRetryCount" value="3" />
+	<parameter name="testRetryInterval" value="6" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="userId" value="tester@logica.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="ui_host" value="http://staging.vista.corp.spire.com/UI/src/app/index.html#/" />
+	<parameter name="WEB_RUN_MODE" value="grid" />
+	<parameter name="WEB_DRIVER_GRID" value="http://172.16.0.204:4444/wd/hub" />
+
+
+	<test name="CRM UI Search Automation">
+	
+		<groups>
+			<run>
+				<include name="testRetryAnalyzer" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.pipeline.test.CRMPipeLineTestPlan1" />
+		</classes>
+	  
+	</test>
+
+</suite>   

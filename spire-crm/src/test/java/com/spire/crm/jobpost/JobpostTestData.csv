@@ -1,0 +1,18 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps,JobPostBean.jobTitle,JobPostBean.companyName,JobPostBean.education,JobPostBean.description,JobPostBean.skills,JobPostBean.country,JobPostBean.State,JobPostBean.addressLane,JobPostBean.city,JobPostBean.postalCode,JobPostBean.Name,JobPostBean.Email
+1,validatePageElementsDisplayed,validatePageElementsDisplayed,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+2,postJobFromURL,postJobFromURL,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+3,uploadFile,uploadFile,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+4,createNewJobPost,createNewJobPost,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+5,verifyJobTitle_OpenPosition,verifyJobTitle_OpenPosition,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+6,verifyRequisitionID_OpenPosition,verifyRequisitionID_OpenPosition,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+7,verifyMultipleJobPost_OpenPosition,verifyMultipleJobPost_OpenPosition,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+8,verifyHomepage_OpenPositionRI,verifyHomepage_OpenPositionRI,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+9,verifyHomepage_OpenPositionJobTitle,verifyHomepage_OpenPositionJobTitle,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+10,verifyHomepageMultipleJobpost,verifyHomepageMultipleJobpost,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+11,closeRequisition,closeRequisition,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+12,createReqInAcqura,createReqInAcqura,,,,,,,,,,,,
+13,PostJobFromOpenPosition,PostJobFromOpenPosition,,,,,,,,,,,,
+14,verifySeeDetails,verifySeeDetails,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,India,Kerala,thiruvananthapuram,Thiruvananthapuram,695505,tester logica,tester@logica.com
+15,checkPagination,checkPagination,,,,,,,,,,,,
+16,postJobAsUSLocation,postJobAsUSLocation,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,United States,California,thiruvananthapuram,Los Angeles,90003,tester logica,tester@logica.com
+17,postJobWrongCity,postJobWrongCity,AutomationTestEngineer,SpireTechnology,Some College,One Year experience,JAVA,United States,California,thiruvananthapuram,ksddfhskhd,90003,tester logica,tester@logica.com

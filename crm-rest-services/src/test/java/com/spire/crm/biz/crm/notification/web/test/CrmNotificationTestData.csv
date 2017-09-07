@@ -1,0 +1,10 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps,NotificationBean.notficationReadStatus,TestData.enumData,TestData.data
+1,verifyCreateNotification_Sanity,Steps : # API : POST /Notification# Action : Create a Notification by giving valid input data # Expected : Notification should be created ,read,SENT,null
+2,verifyCreateNotification_Sanity,Steps : # API : POST /Notification# Action : Create a Notification by giving valid input data # Expected : Notification should be created ,read,JOBPOST,null
+3,verifyCreateNotification_Sanity,Steps : # API : POST /Notification# Action : Create a Notification by giving valid input data # Expected : Notification should be created ,unread,SENT,null
+4,verifyCreateNotification_Sanity,Steps : # API : POST /Notification# Action : Create a Notification by giving valid input data # Expected : Notification should be created ,unread,JOBPOST,null
+5,verifyUpdateNotification_Sanity,Steps : # API : POST /Notification# Action : Update the  Notification read status to unread # Expected : Notification read status should be Updated,unread,JOBPOST,null
+6,verifyUpdateNotification_Sanity,Steps : # API : POST /Notification# Action : Update the  Notification read status to read # Expected : Notification read status should be Updated,read,SENT,null
+7,verifyBulkUpdateNotification_Sanity,Steps : # API : POST /Notification# Action : Update the  Notification read status to read by using bulk update  # Expected : All listed Notification read status should be Updated,read,SENT,Bulk Cout :2
+8,verifyBulkUpdateNotification_Sanity,Steps : # API : POST /Notification# Action : Update the  Notification read status to read by using bulk update  # Expected : All listed Notification read status should be Updated,unread,JOBPOST,Bulk Cout :4
+9,verifyNotificationByType_Sanity,Steps : # API : POST /Notification# Action : Update the  Notification read status to read by using bulk update  # Expected : All listed Notification read status should be Updated,unread,JOBPOST,Bulk Cout :4

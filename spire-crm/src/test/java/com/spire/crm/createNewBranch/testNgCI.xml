@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CreateNewBranch Automation" parallel="methods" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+	
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="source_branch_name" value="master" />
+	<parameter name="new_branch" value="test5" />
+	<parameter name="emailToList" value="test5" />
+	<parameter name="repositories" value="http://gitlab.spire2grow.com/qe-automation/spire-base" />
+
+	<test name="CreateNewBranch Automation">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.createNewBranch" />
+		</packages>
+	</test>
+	
+</suite>   
+
+

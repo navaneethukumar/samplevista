@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="SearchBizWeb Service" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="ENABLE_DATA_EXECUTION" value="true" />
+	<parameter name="ENVIRONMENT" value="production" />
+	<parameter name="openReportInBrowser" value="Chrome" />
+	<parameter name="username" value="crm@test.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="URL"
+		value="https://testvista.spire2grow.com/UI/src/app/index.html#/" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="ui_host" value="https://testvista.spire2grow.com" />
+
+	<test name="ProductionTestTenant - DemoWorkFlows">
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.demoflows.ProductionWorkFlowSantityTestPlan" />
+		</classes>
+	</test>
+</suite>               
+        
+   

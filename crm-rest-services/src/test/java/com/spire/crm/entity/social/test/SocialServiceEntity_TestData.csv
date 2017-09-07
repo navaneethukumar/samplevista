@@ -1,0 +1,23 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.data,TestData.TestSteps
+1,createSocialProfile,null,Create a SocialProfile with all details and verify created profile
+2,createSocialProfile,FollowersNull,Create social profile withot giving Followers field
+3,createSocialProfile,FollowingNull,Create social profile withot giving Following field
+4,createSocialProfile,SocialExtNull,Create social profile withot giving SocialExt field
+5,createBasicSocialProfile,Interests,Create social profile only by giving Interests
+6,createBasicSocialProfile,Hobbies,Create social profile only by giving Hobbies
+7,createBasicSocialProfile,Followers,Create social profile only by giving Followers
+8,createMiniSocialProfile,ProfessionalSummary,Create social profile only by giving ProfessionalSummary
+9,createMiniSocialProfile,StackOverFlowrank,Create social profile only by giving StackOverFlowrank
+10,createMiniSocialProfile,Objective,Create social profile only by giving Obective
+11,getSocialProfile,full,Get Social profile by giving projectionType as 'full'
+12,getSocialProfile,basic,Get Social profile by giving projectionType as 'basic'
+13,getSocialProfile,intermediate,Get Social profile by giving projectionType as 'intermediate'
+14,socialProfile_LRG1,null,Create Social profile to candidateID which already has social details
+15,socialProfile_LRG,invalidCandidateId,Get Social profile by giving invalid candidateId
+16,createBulkSocialProfiles,null,Create Bulk SocialProfiles
+17,getBulkSocialProfiles,null,Create Bulk SocialProfiles and get bulk social by created candidateIds
+18,patchSocialProfile,Interests,Create a socialProfile and update Interests
+19,patchSocialProfile,Hobbies,Create a socialProfile and update Hobbies
+20,patchSocialProfile,ProfessionalSummary,Create a socialProfile and update ProfessionalSummary
+21,patchSocialProfile,LinkedInURL,Create a socialProfile and update LinkedInURL
+22,patchSocialProfile,LinkedInConnectionCount,Create a socialProfile and update LinkedInConnectionCount

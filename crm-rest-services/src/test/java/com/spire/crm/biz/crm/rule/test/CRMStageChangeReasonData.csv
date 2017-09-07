@@ -1,0 +1,4 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps,TestData.data
+1,adddReason_Sanity,Steps : # API : POST /createRule# Action : Add 2 reasons to reasons list,Count:1
+2,adddReason_Sanity,Steps : # API : POST /createRule# Action : Add 2 reasons to reasons list,Count:2
+3,listReason_Sanity,Steps : # API : POST /createRule# Action : Add 2 reasons to reasons list,Count:2

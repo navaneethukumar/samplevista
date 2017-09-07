@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Sales CRM UI Automation" parallel="tests" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReportV2" />
+	</listeners>
+	
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="testRetryCount" value="3" />
+	<parameter name="selenium_grid" value="true" />
+
+	<test
+		name="CRM UI Automation - Local Test SANITY TestScripts" parallel="methods"
+		thread-count="5">
+		<parameter name="ui_host"
+			value="http://test2.vista.corp.spire.com/UI/src/app/index.html#/" />
+		<parameter name="userId" value="user@star.com" />
+		<parameter name="password" value="spire@123" />
+		<parameter name="db_host"
+			value="demo.clapjg0gnhyn.us-east-1.rds.amazonaws.com" />
+		<parameter name="db_password" value="abcd#abcd" />
+		<parameter name="schemaName" value="star_schema" />
+		<parameter name="searchHostName" value="192.68.2.69:8381" />
+
+		<groups>
+			<run>
+				<include name="verifyProfileCreation" />
+				<include name="verifyActivityCreation" />
+				<include name="verifyProfileUpdation" />
+				<include name="verifyProfileDetailsDeletion" />
+				<include name="verifyActivityElements" />
+				<include name="verifyCreateEmailTemplate" />
+				<include name="verifyCloneCampaign" />
+				<include name="verifySearchResults" />
+				<include name="verifyAttachLabel" />
+				<include name="verifyHomePageElements" />
+				<include name="verifyPipeline" />
+				<!-- <include name="uploadFile" /> -->
+				<include name="createNewJobPost" />
+				<include name="postJobFromURL" />
+				<include name="verifyEngagementScore" />
+				<include name="verifySimilarProfiles" />
+
+			</run>
+		</groups>
+		<classes>
+      		<class name="com.spire.crm.local.smoke.test.LocalTestSmokeTestPlan" />
+   		</classes>
+	</test>
+
+</suite> 

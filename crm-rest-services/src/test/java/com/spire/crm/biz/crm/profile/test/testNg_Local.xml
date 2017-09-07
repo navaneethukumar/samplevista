@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM-PROFILES Service" parallel="tests"
+	thread-count="1">
+<listeners> <listener class-name="com.spire.base.reporter.SpireReport" 
+		/> <listener class-name="com.spire.base.controller.TestRetryListener" /> 
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" /> </listeners>
+
+	<parameter name="healthCheck" value="false" />	
+	<parameter name="healthCheck" value="false" />  
+	<parameter name="ui_host" value="http://192.168.2.185" />
+	<parameter name="biz_host" value="http://192.168.2.185:8085" />
+	<parameter name="db_host" value="://192.168.2.185:3306"/>
+	<parameter name="entity_host" value="http://192.168.2.185:8085" />
+	<parameter name="mautic_host" value="://192.168.2.185:8085" />
+	
+
+	<test name="CRM-PROFILES Testscripts - Sanity">
+		<groups>
+
+			<run>
+				<include name="downloadlabelReport_Sanity"/>
+
+			</run>
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.biz.crm.profile.test" />
+		</packages>
+	</test>
+
+
+</suite>               
+        
+   

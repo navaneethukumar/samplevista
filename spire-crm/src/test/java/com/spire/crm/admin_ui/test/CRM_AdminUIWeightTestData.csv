@@ -1,0 +1,3 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,EngagementWeight.compatibility,EngagementWeight.connectFactrs,EngagementWeight.awareness,EngagementWeight.personalComm,EngagementWeight.interestLevel,EngagementWeight.broadcastComm
+1,verifyEngagementWeightFields,5,10,15,20,20,30
+2,updateWeight,5,10,15,20,20,30

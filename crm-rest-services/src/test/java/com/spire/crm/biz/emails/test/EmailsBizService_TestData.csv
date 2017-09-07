@@ -1,0 +1,11 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps,Template.name,Template.subject,Template.contentBody,Template.contentSignature,Template.createdByName,Template.modifiedByName,EmailQueryParamPojo.limit,EmailQueryParamPojo.offset,SendEmailWithTemplateVO.from,SendCustomEmailVO.from,SendCustomEmailVO.subject,SendCustomEmailVO.contentBody
+1,verify_createTemplates,verifycreateTemaplates,one,one,one,one,Spire,Spire,10,0,y,p,p,p
+2,verify_sendEmail,verifysenEmails,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,p,p
+3,verify_sendCustomEmail,verifysendCustomEmails,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,Custommail
+4,verify_getSENTActivity,verifysendCustomEmails,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,Custommail
+5,verify_deleteTemplate,deleteTemplate,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,p
+6,verify_listTemplate,listTemplate,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,p
+7,verify_editTemplate,verifyeditTemplate,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,p
+8,verify_getTemplate,getTemplate,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,p
+9,verify_NotoficationsForWrongEmailId,Notofications,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,p
+10,verify_READActivity,verifyREADActivity,rr,rr,rr,rr,Spire,Spire,10,0,jagadeesh.jayachandra@spire2grow.com,jagadeesh.jayachandra@spire2grow.com,Custommail,p

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="methods" thread-count="1">
+	<!-- <listeners> <listener class-name="com.spire.base.reporter.SpireReport" 
+		/> <listener class-name="com.spire.base.reporter.SpireEmailReport" /> <listener 
+		class-name="com.spire.base.controller.TestRetryListener" /> </listeners> -->
+
+	<!--instance names host -->
+	<parameter name="host"
+		value="http://192.168.2.183/UI/src/app/index.html#/Login" />
+	<parameter name="ui_host" value="http://192.168.2.124" />
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="*Firefox" />  
+	<test name="ActivityStream UI">
+		<groups>
+			<run>      
+				<!-- <include name="validateActivityData" /> -->
+				<include name="Sanity" />          
+			</run>
+		</groups>        
+		<packages>
+			<package name="com.spire.crm.activityStream" />
+		</packages>     
+	</test>
+</suite>        
+
+

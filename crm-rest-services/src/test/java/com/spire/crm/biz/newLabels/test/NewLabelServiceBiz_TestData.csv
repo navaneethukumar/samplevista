@@ -1,0 +1,17 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.TestData,TestData.data,TestData.TestSteps
+1,createLabel_Sanity,PRIVATE,CANDIDATE,create label by giving labelName and scope as private
+2,attachLabelsToEntity_Sanity,PRIVATE,CANDIDATE,Create label  with scope as private and attach labels to Entity and validate by listProfiles
+3,createLabels_Sanity,PRIVATE,CANDIDATE,Create bulk labels at a time by giving labelNames and scope as public and verify by listLabels
+4,attachLabelsToEntities_Sanity,PRIVATE,CANDIDATE,create labels with scope as private and attach labels to entities and verify by listProfiles 
+5,attachLabelsToEntities_Sanity,PRIVATE,CANDIDATE,create labels with scope as public  and attach labels to entities and verify by listProfiles 
+6,detachLabelsToEntity_Sanity1,PRIVATE,CANDIDATE,Create label  with scope as private and attach labels to Entity and detach that attached entity and validate by listProfiles
+7,detachLabelsToEntity_Sanity,SHARED,CANDIDATE,Create label  and share the label  and attach labels to Entity and detach that attached entity and validate by listProfiles
+8,detachLabelsToEntities_Sanity,PRIVATE,CANDIDATE,Create label  with scope as private and attach labels to Entities  and detach that attached entities and validate by listProfiles
+9,detachLabelsToEntities_Sanity,SHARED,CANDIDATE,Create label  with scope as public  and attach labels to Entities and detach that attached entities and validate by listProfiles
+10,deleteLabel_Sanity,PRIVATE,CANDIDATE,Delete multiple lables using bulk  label call
+11,deleteLabels_Sanity,PRIVATE,CANDIDATE,Delete single label using signle label call
+12,listProfiles_Sanity,FULL,CANDIDATE,"Verify the get profiles under the label,by attching 3 candidates "
+12,renameLabel_Sanity,PRIVATE,CANDIDATE,Verify the user is able to rename the label
+14,shareTheLabel_Sanity,,CANDIDATE,shareTheLabel_Sanity
+15,filterLabels_Sanity,PRIVATE,CANDIDATE,filterLabels_Sanity
+16,addUser_Sanity,PRIVATE,CANDIDATE,addUser_Sanity

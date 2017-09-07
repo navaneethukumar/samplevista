@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="User  biz Service" parallel="tests" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+
+	<parameter name="healthCheck" value="false" />
+
+	<test name="User  biz Service Testscripts - Sanity">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		
+		<packages>
+			<package name="com.spire.crm.biz.userservice.test" />
+		</packages>   
+	</test>
+	
+	<test name="User  biz Service Testscripts - SRG">
+		<groups>
+			<run>
+				<include name="SRG" />
+			</run>
+		</groups>
+		
+		<packages>
+			<package name="com.spire.crm.biz.userservice.test" />
+		</packages>   
+	</test>
+	
+	<test name="User  biz Service Testscripts - LRG">
+		<groups>
+			<run>
+				<include name="LRG" />  
+			</run>
+		</groups>
+		
+		<packages>
+			<package name="com.spire.crm.biz.userservice.test" />
+		</packages>   
+	</test>
+
+</suite>               
+        

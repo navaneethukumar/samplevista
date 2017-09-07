@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />   
+
+	
+	<test
+		name="CRM UI Automation - Production Santity TestScriptsFor ACCENTURE-IND">
+		<parameter name="URL"
+			value="https://acnidcvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="recruiter@accentureind.com" />
+		<parameter name="password" value="spire@123" />
+		<parameter name="REALM" value="Realm13" />  
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+	
+</suite>   
+
+

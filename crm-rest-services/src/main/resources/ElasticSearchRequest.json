@@ -1,0 +1,192 @@
+{
+  "from" : 0,
+  "size" : 60,
+  "query" : {
+    "query_string" : {
+      "query" : "skill:\"spireskill1\" OR skill:\"spireskill2\" OR skill:\"spireskill3\"",
+      "auto_generate_phrase_queries" : true,
+      "phrase_slop" : 0
+    }
+  },
+  "_source" : {
+    "includes" : [ "id", "firstName", "lastName", "locationName", "totalExperienceMnth", "employerName", "currentRole", "crm.engagement_score", "crm.stage_name", "sourceName", "sourceType", "candidateSkillMapBean.items.skill", "candidateSkillMapBean.items.skillStrength", "candidateSkillMapBean.items.skillRecencyGap", "candidateEmployerMapBean.items.employerName", "candidateEmployerMapBean.items.isCurrentEmployer", "candidateEmployerMapBean.items.designationName", "updatedOn", "ri", "primaryEmailId", "primaryEmailIdType", "primaryContactNumber", "primaryContactNumberCountryCode", "primaryContactNumberType", "roleName", "status", "clientUpdatedOn", "crm.feedback_status", "crm.stage_change_reason" ],
+    "excludes" : [ ]
+  },
+  "aggregations" : {
+    "term_SKILL" : {
+      "terms" : {
+        "field" : "candidateSkillMapBean.items.skill.raw",
+        "size" : 10
+      }
+    },
+    "term_LOCATION" : {
+      "terms" : {
+        "field" : "locationName.raw",
+        "size" : 10
+      }
+    },
+    "term_EXPERIENCE" : {
+      "range" : {
+        "field" : "totalExperienceMnth",
+        "ranges" : [ {
+          "from" : 0.0,
+          "to" : 24.0
+        }, {
+          "from" : 25.0,
+          "to" : 60.0
+        }, {
+          "from" : 61.0,
+          "to" : 120.0
+        }, {
+          "from" : 121.0
+        } ]
+      }
+    },
+    "term_EMPLOYER_NAME" : {
+      "terms" : {
+        "field" : "candidateEmployerMapBean.items.employerName.raw",
+        "size" : 10
+      }
+    },
+    "term_INSTITUTE_NAME" : {
+      "terms" : {
+        "field" : "candidateEducationMapBean.items.instituteName.raw",
+        "size" : 10
+      }
+    },
+    "term_DESIGNATION" : {
+      "terms" : {
+        "field" : "currentRole.raw",
+        "size" : 10
+      }
+    },
+    "term_ENGAGEMENT_SCORE" : {
+      "range" : {
+        "field" : "engagement_score",
+        "ranges" : [ {
+          "from" : 0.0,
+          "to" : 20.0
+        }, {
+          "from" : 20.0,
+          "to" : 40.0
+        }, {
+          "from" : 40.0,
+          "to" : 60.0
+        }, {
+          "from" : 60.0,
+          "to" : 80.0
+        }, {
+          "from" : 80.0,
+          "to" : 100.0
+        } ]
+      }
+    },
+    "term_ENGAGEMENT_STAGE_NAME" : {
+      "terms" : {
+        "field" : "crm.stage_name.raw",
+        "size" : 10
+      }
+    },
+    "term_FEEDBACK_STATUS" : {
+      "terms" : {
+        "field" : "crm.feedback_status.raw",
+        "size" : 10
+      }
+    },
+    "term_STAGE_CHANGE_REASON" : {
+      "terms" : {
+        "field" : "crm.stage_change_reason.raw",
+        "size" : 10
+      }
+    },
+    "term_SOURCE_NAME" : {
+      "terms" : {
+        "field" : "sourceName.raw",
+        "size" : 10
+      }
+    },
+    "term_SOURCE_TYPE" : {
+      "terms" : {
+        "field" : "sourceType.raw",
+        "size" : 10
+      }
+    },
+    "term_DEGREE_NAME" : {
+      "terms" : {
+        "field" : "candidateEducationMapBean.items.degreeName.raw",
+        "size" : 10
+      }
+    },
+    "term_PRIMARY_EMAIL_ID" : {
+      "filter" : {
+        "exists" : {
+          "field" : "primaryEmailId"
+        }
+      }
+    },
+    "term_PRIMARY_CONTACT_NUMBER" : {
+      "filter" : {
+        "exists" : {
+          "field" : "primaryContactNumber"
+        }
+      }
+    },
+    "term_PRIMARY_EMAIL_ID_MISSING" : {
+      "filter" : {
+        "missing" : {
+          "field" : "primaryEmailId"
+        }
+      }
+    },
+    "term_PRIMARY_CONTACT_NUMBER_MISSING" : {
+      "filter" : {
+        "missing" : {
+          "field" : "primaryContactNumber"
+        }
+      }
+    },
+    "term_STATUS" : {
+      "terms" : {
+        "field" : "status.raw",
+        "size" : 0
+      }
+    },
+    "term_CLIENT_UPDATED_ON" : {
+      "date_range" : {
+        "field" : "clientUpdatedOn",
+        "ranges" : [ {
+          "key" : "0-1months~[now-1M TO now-0M]",
+          "from" : "now-1M",
+          "to" : "now-0M"
+        }, {
+          "key" : "1-3months~[now-3M TO now-1M]",
+          "from" : "now-3M",
+          "to" : "now-1M"
+        }, {
+          "key" : "3-6months~[now-6M TO now-3M]",
+          "from" : "now-6M",
+          "to" : "now-3M"
+        }, {
+          "key" : ">6months~[ * TO now-6M]",
+          "to" : "now-6M"
+        } ],
+        "format" : "yyyy-MM-dd"
+      }
+    },
+    "term_ROLE" : {
+      "terms" : {
+        "field" : "candidateProjectMapBean.items.roleName.raw",
+        "size" : 10
+      }
+    }
+  },
+  "highlight" : {
+    "pre_tags" : [ "" ],
+    "post_tags" : [ "" ],
+    "fragment_size" : 2000,
+    "number_of_fragments" : 1000,
+    "fields" : {
+      "skill" : { }
+    }
+  }
+}

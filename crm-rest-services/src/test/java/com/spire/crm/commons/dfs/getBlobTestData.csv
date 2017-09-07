@@ -1,0 +1,13 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireDFSPojo.testSteps,SpireDFSPojo.isGetBlob,SpireDFSPojo.fileName,SpireDFSPojo.container,SpireDFSPojo.folderPath,SpireDFSPojo.expected
+1,getBlobTest_Sanity1,"Steps : # API : getBlobTest  # Operation : getBlob by providing valid file , container and filepath # Expected : It should retrive file",YES,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,Generic-spire-crawl,profiles,SUCCESS
+2,getBlobTest_SRG,Steps : # API : getBlobTest  # Operation : getBlob by providing invalid file # Expected : It should not retrive file,YES,test,Generic-spire-crawl,profiles,FAIL
+3,getBlobTest_SRG,Steps : # API : getBlobTest  # Operation : getBlob by providing invalid filepath  # Expected : It should not retrive file,YES,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,Generic-spire-crawl,test,FAIL
+4,getBlobTest_SRG1,Steps : # API : getBlobTest  # Operation : getBlob by providing the invalid container  # Expected : It should not retrive file,YES,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,test,profiles,FAIL
+5,getBlobTest_SRG1,Steps : # API : getBlobTest  # Operation :  getBlob by providing invalid file and filepath # Expected : It should not retrive file,YES,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,test,test,FAIL
+6,getBlobTest_LRG1,"Steps : # API : getBlobTest  # Operation :  getBlob by provding invalid filename , filepath and container # Expected : It should not retrive file",YES,test,test,test,FAIL
+7,getBlobTest_Sanity1,"Steps : # API : getBlobMetadata  # Operation : getBlob by providing valid file , container and filepath # Expected : It should retrive file",NO,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,Generic-spire-crawl,profiles,SUCCESS
+8,getBlobTest_SRG,Steps : # API : getBlobMetadata  # Operation : getBlob by providing invalid file # Expected : It should not retrive file,NO,test,Generic-spire-crawl,profiles,FAIL
+9,getBlobTest_SRG,Steps : # API : getBlobMetadata  # Operation : getBlob by providing invalid filepath  # Expected : It should not retrive file,NO,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,Generic-spire-crawl,test,FAIL
+10,getBlobTest_SRG1,Steps : # API : getBlobMetadata  # Operation : getBlob by providing the invalid container  # Expected : It should not retrive file,NO,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,test,profiles,FAIL
+11,getBlobTest_LRG1,Steps : # API : getBlobMetadata  # Operation :  getBlob by providing invalid file and filepath # Expected : It should not retrive file,NO,null_30efe0e1-5ef3-44c5-8cee-6b33456093be.html,test,test,FAIL
+12,getBlobTest_LRG1,"Steps : # API : getBlobMetadata  # Operation :  getBlob by provding invalid filename , filepath and container # Expected : It should not retrive file",NO,test,test,test,FAIL

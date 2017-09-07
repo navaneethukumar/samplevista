@@ -1,0 +1,14 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,validateHomePageElements,"#Action: Login and verify Home page elements #Expected: After login all the elements like SearchTextfield, NotificationIcon, LoggedInUserIcon, 4Tabs(Home, Engage, Jobs, Reports), 5 fields like CRM Pipeline, ActivityStream, Jobs, PopularTags, OpenPositions"
+2,validateDropdowns,#Action: 1. Login 2. Select values from pipeline date filter and activityStream date filter #Expected: Both dropdowns should be present and should be able to select values from dropdowns
+3,validatePipeLineData,"#Action: 1. Login 2. check for pipeline data like Applicant, Engage, Hold and Lead #Expected: 4stages of CRM pipeline should be displayed with number of applicants, number of leads etc"
+4,validatePopularTagsData,#Action: 1. Login 2. Check for popular tags data #Expected: Tags should be displayed in Popular tags field
+5,ValidateActivityData,"#Action: 1. Login 2. Check for ActivityData #Expected: In ActivityStream field, activities should be displayed"
+6,validateActivityIcons,"#Action: 1. Login 2. Check for icons like Mobile, Email, favourite icons in ActivityStream #Expected: All the icons should be present"
+7,validateRecentPostData,#Action: 1. Login 2. Check for Recent Posts data #Expected: Recent post details should be displayed
+8,validateOpenPositionsData,#Action: 1. Login 2. Check for Open Positions data #Expected: Open positions should be displayed in Open Positions field
+9,validateEngageList,"#Action: 1. Login 2. Click EngageTab, Validate elements in EngagePage #Expected: Verify that EngagePage has 4tabs like Home,Campaigns,EmailTemplates,EngmtScoreRules. 4CRM Stages, Minimize stages icon, engmtscore increase/decrease icon, LastEngmtTime dropdown, selectAll icon, message icon, tag icon, email icon"
+10,validateEngageActivityData,"#Action: Validate Engage ActivityData #Expected: Verify that in EngagePageActivity all the elements are present(ProfileNames, Current stage of candidate, role, experience, last engaged, candidate icons and score of the candidate)"
+11,validateCampaignsData,"#Action: 1.Login 2.Click EngageTab 3.click Campaigns tab #Expected: It should list all the campaigns, and it should display campaign activitydata, createCampaign button"
+12,validateEmailTemplateData,"#Action: 1.Login 2.Click EngageTab 3.click EmailTemplate tab #Expected: It should display list of all templates, createdBy, createdOn, sendCount, readCount, NEW button, delete button, edit template button"
+13,validateEngmtScoreRulesData,"#Action: 1.Login 2.Click EngageTab 3.select EngagementScoreRules #Expected: It should display list of rules, Rule createdBy, Rule createdAt, actionNames, points, ruleUpdatedBy, ruleUpdatedAt, editRuleButton, deleteRuleButton, newRuleButton"

@@ -1,0 +1,8 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,SpireTestObject.testSteps
+1,validateHomePageElements,
+2,validateNavigationToAdvanceSearchPage,
+3,validateNavigationToUploadCandidatePage,
+4,validateNavigationToManageLabelPage,
+5,validateNavigationToHomePageFromUploadCandidatePage,
+6,validateNavigationToHomePageFromManageLabelPage,
+7,validateNavigationToSearchResultsPageFromHomePage,

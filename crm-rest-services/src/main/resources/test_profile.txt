@@ -1,0 +1,29 @@
+"Job Title Java Developer
+Relevant Experience 
+(in Yrs) 6+
+Technical/Functional Skills Java / JEE
+Experience Required Extensive experience in coding in Java / JEE technologies
+To build a mapping layer that takes the internal data standard, parses the data and stores it to tables in the application 
+Integration between two applications
+Roles & Responsibilities 
+· Experience with the IBM Rational Development Environment (RAD and RSA)
+· Experience with WebSphere Application Server
+· Java Enterprise Edition (1.6) Development Experience
+· Java Persistence API Development Experience
+· SOAP Web Services Development Experience (CXF experience is preferred)
+· Knowledge of an Application Logging Framework (log4net is preferred)
+· Knowledge of Unit Testing Using a Framework (junit is preferred)
+· Knowledge of Mocking Framework (jmockit is preferred)
+· Developing web service component tests using soapUI.
+· Experience with Maven build automation tool
+· Agile/Scrum methodology
+· Understanding of Oracle query development
+
+We'd like 2 Senior Developer – Java (Agile) at the 10+ years experience and 1 Junior developer with 6 – 9 years experience. 
+The more junior developer will spend more of their time on the in-sprint automation harness, while the other two are involved in the ACORD 1122 to NYL NB21 transformation and mapping service. 
+
+Generic Managerial Skills 
+Education Bachelor
+Start date (dd-mmm-yy) Immediate
+Duration of assignment (in Months) 6 months
+Work Location Clinton, NJ"

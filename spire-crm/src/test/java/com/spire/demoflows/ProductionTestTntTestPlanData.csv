@@ -1,0 +1,11 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle
+1,verifyLoginSuccess
+2,verifyHomePageRenderedSuccessfully
+3,verifyProfileMoveToCRMStages
+4,verifyProfilesAddedToCRMPipeline
+5,verifyPopularTagResult
+6,verifyViewAllTagResult
+7,verifyProfileAttachedToCampaign
+8,verifyCampaignPageResults
+9,verifyEmailTemplateResults
+10,verifySearchResults

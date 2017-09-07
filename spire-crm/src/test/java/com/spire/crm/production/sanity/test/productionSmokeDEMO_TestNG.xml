@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="REALM" value="REALM" />
+
+	<test name="TV UI Automation - Production Smoke TestScripts For DEMO">
+		<parameter name="URL"
+			value="https://spiredemovista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="recruiter1@demo.com" />
+		<parameter name="password" value="spire@123" />
+		<groups>
+			<run>
+				<include name="verifyLoginSuccess" />
+				<include name="verifyHomePageRenderedSuccessfully" />
+				<include name="verifySearchAndResults" />
+				<include name="verifyProfilePageRenderedWithAllContents" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test name="TV UI Automation - Production Santity TestScriptsFor DEMO-IND">
+		<parameter name="URL"
+			value="https://spiredemoindvista.spire2grow.com/UI/src/app/index.html" />
+		<parameter name="username" value="recruiter@demoind.com" />
+		<parameter name="password" value="spire@123" />
+		<groups>
+			<run>
+				<include name="verifyLoginSuccess" />
+				<include name="verifyHomePageRenderedSuccessfully" />
+				<include name="verifySearchAndResults" />
+				<include name="verifyProfilePageRenderedWithAllContents" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+
+</suite>   

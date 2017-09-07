@@ -1,0 +1,106 @@
+{
+ "displayId": "REQ-4012253101",
+ "jobTitle": "Spire1200251",
+ "exprncFromMnth": 12,
+ "exprncToMnth": 48,
+ "statusDisplay": "OPEN",
+ "statusCode": "OPEN",
+ "totalOpenPositions": 10,
+ "jobDescriptionUrl": "www.gmail.com",
+ "crntOpenPositions": 8,
+ "openDate": "2015-06-10",
+ "closeDate": "2016-06-17",
+ "minComp": 500000,
+ "maxComp": 800000,
+ "currencyCode": null,
+ "jobLevelId": null,
+ "jobLevel": null,
+ "businessUnitId": null,
+ "businessUnit": null,
+ "clientCreatedOn": "2015-06-10",
+ "clientUpdatedOn": "2015-06-10",
+ "flowId": "randomUUID",
+ "criticality" : "4",
+ "reqSourceMapBean": {
+   "links": [
+     {
+       "rel": "SELF",
+       "href": "string"
+     }
+   ],
+   "items": [
+     {
+       "sourceName": null,
+       "sourceType": null,
+       "flowId": "randomUUID"
+     }
+   ],
+   "hasMore": false,
+   "totalResults": 1
+ },
+ "reqSkillMapBean": {
+   "links": [
+     {
+       "rel": "SELF",
+       "href": "string"
+     }
+   ],
+   "items": [
+     {
+       "skillCategory": "ESSENTIAL",
+       "skill": "java 9.0",
+       "skillExprncFromMnth": 40,
+       "skillExprncToMnth": 60,
+       "skillPrfcncyFrom": 10,
+       "skillPrfcncyTo": 20,
+       "skillOccurrence": 22,
+       "skillIndex": "1234",
+       "flowId": "randomUUID"
+     }
+   ],
+   "hasMore": false,
+   "totalResults": 2
+ },
+ "reqLocationMapBean": {
+   "links": [
+     {
+       "rel": "SELF",
+       "href": "string"
+     }
+   ],
+   "items": [
+     {
+       "locationName": "UPTU",
+       "locationType": "City",
+       "flowId": "string"
+     }
+   ],
+   "hasMore": false,
+   "totalResults": 0
+ },
+ "reqJobFamilyMapBean": {
+   "links": [
+     {
+       "rel": "SELF",
+       "href": "string"
+     }
+   ],
+   "items": [
+     {
+       "jobFamily": "Administration",
+       "flowId": "string"
+     }
+   ],
+   "hasMore": false,
+   "totalResults": 0
+ },
+ "screenSelect": 0,
+ "screenReject": 0,
+ "totalCount": 0,
+ "businessSelect": 0,
+ "businessReject": 0,
+ "interviewedCandidates": 0,
+ "offerReleasedCandidates": 0,
+ "hiredCandidates": 0,
+ "yetToJoin": 0
+}

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="userId" value="user@star.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="ui_host"
+		value="http://test2.vista.corp.spire.com/UI/src/app/index.html#/" />
+	<parameter name="testRetryCount" value="1" />
+	<parameter name="selenium_grid" value="false" />
+
+	<test name="Search UI - verifycreateFullProfile"
+		parallel="methods" thread-count="8">
+		<groups>
+			<run>
+				<include name="verifycreateFullProfile" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.spire.crm.search.test.SearchTestPlan" />
+		</classes>
+	</test>
+
+</suite>   
+
+

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="methods" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+	</listeners>
+
+	<!--instance names host -->
+	<parameter name="healthCheck" value="false" />
+	<parameter name="host"
+		value="http://test.vista.corp.spire.com/admin-ui/src/app/index.html#/Login" />
+	<parameter name="ui_host" value="http://test.vista.corp.spire.com" />
+	<parameter name="biz_host" value="http://test.vista.corp.spire.com:8085" />
+	<parameter name="db_host" value="://http://test.vista.corp.spire.com:3306"/>
+	<parameter name="entity_host" value="http://192.168.2.69:8085" />
+	<parameter name="mautic_host" value="://192.168.2.69:8085" /> 
+
+	<!--browser values of *Firefox,Chrome,IE -->
+	<parameter name="browser" value="*Firefox" />
+
+<!-- <parameter name="testRetryCount" value="4" /> -->
+
+	<test name="CRM UI Automation - admin_ui_Test">
+		<groups>
+			<run>
+
+				<include name="SRG" />
+
+			</run>
+
+		</groups>
+		<packages>
+			<package name="com.spire.crm.admin_ui.test" />
+		</packages>
+	</test>
+</suite>   
+
+

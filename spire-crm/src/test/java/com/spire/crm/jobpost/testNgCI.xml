@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" thread-count="1">
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners>
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="userId" value="tester@logica.com" />
+	<parameter name="password" value="spire@123" />
+	<parameter name="ui_host" value="http://staging.vista.corp.spire.com/UI/src/app/index.html#/" />
+
+	<test name="CRM UI Search Automation">
+	
+		<groups>
+			<run>
+				<include name="verifyHomepage_OpenPositionJobTitle" />
+				
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.jobpost" />
+		</packages>
+	  
+	</test>
+
+</suite>   

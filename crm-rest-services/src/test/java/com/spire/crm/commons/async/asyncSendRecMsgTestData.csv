@@ -1,0 +1,13 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,ProdConsPojo.testSteps,ProdConsPojo.topic,ProdConsPojo.partitions,ProdConsPojo.replica,ProdConsPojo.messages,ProdConsPojo.readDataCount,ProdConsPojo.expectedOffset,ProdConsPojo.expectedLag,ProdConsPojo.resend
+1,testProducerConsumer,"Test Steps :: # Create a topic, 10 send messages, read 5 messages check offset #Expected Result : It should give 5 as offset, and 5 as Lag #",ProdConsTest,10,1,aaa#bbb#ccc#ddd#eee#fff#ggg#hhh#iii#jjj,5,5,5,No
+2,testProducerConsumer,Test Steps :: # Send a single message as null and get osffset and lag #Expected Result : It should give offset as 1 and Lag as 0 #,NullMsgTest,5,1,null,2,1,0,No
+3,testProducerConsumer,Test Steps :: # Send a single message and try to read more than one message and get the offset and lag #Expected Result :It should give offset as 1 and Lag as 0 #,readMoreTest,5,1,abc,3,1,0,No
+4,testProducerConsumer,Test Steps :: # Send a single messageas blank and read it #Expected Result :It should give offset as 1 and Lag as 0 #,blankTest,5,1,blank,2,1,0,No
+5,testProducerConsumer,"Test Steps :: # Send single message, wait for 5 seconds, resend the message #Expected Result : Message should be sent #",ResendTest1,5,1,bandage,1,1,1,yes
+6,testProducerConsumer,"Test Steps :: # Send 10 message, read 4 messages #Expected Result : Offset should be 4 and lag should be 6 #",Sample12,8,1,1#2#3#4#5#6#7#8#9#10,4,4,6,No
+7,testProducerConsumer,"Test Steps :: # Send 10 message, read all messages #Expected Result : Offset should be 10 and lag should be 0 #",Sample13,4,1,1#2#3#4#5#6#7#8#9#10,10,10,0,No
+8,getCurrentLeadBroker,Test Steps :: # Get Current lead Broker #Expected Result : It should give current lead broker#,fff,3,1,saas,0,null,null,No
+9,sendMsg_KeyValue,Test Steps :: # Send Messages in Key value pair #Expected Result :Messages should be sent#,dfgfg,1,1,"1,2",1,0,0,No
+10,sendMsg_KeyValueList,"Test Steps :: #  Read count all messages,,Send Messages as Map[using interface: send(Map<String, List<Message>> message, EventCallback callback)] #Expected Result :Messages should be sent#",dfgfg,4,1,"4 messages,, List: spire1,spire2,, Map: grow1,grow2",4,0,0,No
+11,testHighLevelConsumer,Test Steps :: #  Send messages and consume from HighLevelConsumer  (readAll)#Expected Result : verify that produced message is same as consumed message#,dfgfg,4,1,"Sup,How",4,0,0,No
+12,testHighLevelConsumer,Test Steps :: #  Send messages and consume from HighLevelConsumer  (readFew)#Expected Result : verify that produced message is same as consumed message#,readFew,4,1,"Sup,How",1,0,0,No

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="HireAsSimilarProfiles Service" parallel="tests"
+	thread-count="1">
+
+	<!-- <listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners> -->
+
+	<parameter name="healthCheck" value="false" />
+<!-- 
+	<test name="Hire As - Sanity">
+		<groups>
+
+			<run>
+
+				<include name="verifyHireAs_Sanity" />
+
+			</run>
+
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.hireassimilar.profiles" />
+		</packages>
+	</test>
+	 -->
+	<test name="Similar Profiles - Sanity">
+		<groups>
+
+			<run>
+
+				<include name="SimilarProfiles_Sanity" />
+
+			</run>
+
+
+		</groups>
+
+		<packages>
+			<package name="com.spire.crm.hireassimilar.profiles" />
+		</packages>
+	</test>
+
+</suite>               
+        
+   

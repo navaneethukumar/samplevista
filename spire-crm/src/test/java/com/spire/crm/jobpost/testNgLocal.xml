@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" parallel="methods" thread-count="1">
+	<listeners> <listener class-name="com.spire.base.reporter.SpireReport"/> 
+		<listener class-name="com.spire.base.controller.TestRetryListener"/> </listeners>
+
+	<!--instance names host -->
+	<parameter name="healthCheck" value="false" />
+	 <parameter name="host"
+		value="http://test2.vista.corp.spire.com/UI/src/app/index.html#/Login" />
+	<parameter name="ui_host" value="http://test2.vista.corp.spire.com/UI/src/app/index.html#/Login" />
+	<parameter name="biz_host" value="http://test.vista.corp.spire.com:8183" />
+	<parameter name="db_host" value="://192.168.2.124:3306" />
+	<parameter name="entity_host" value="http://192.168.2.69:8181" />
+	<parameter name="mautic_host" value="://192.168.2.69:8181" />
+	<parameter name="userId" value="user@star.com" />
+	<parameter name="password" value="spire@123" />
+
+	<!--browser values of *Firefox,Chrome,IE -->
+	<parameter name="browser" value="Chrome" />
+
+	<!-- <parameter name="testRetryCount" value="4" /> -->
+
+	<test name="JobPost-test">
+
+	<groups>
+		<run>
+			<include name="Sanity" />
+		
+		</run>
+	</groups>
+		<packages>
+	            <package name="com.spire.crm.jobpost" />
+         </packages>
+
+	<classes>
+		<class name="com.spire.crm.jobpost.JobpostTestPlan">
+			<!-- <methods>
+				<include name="createReqInAcqura" />
+				<include name="PostJobFromOpenPosition" />
+			</methods> -->
+		</class>
+	</classes>
+	
+	
+	</test>
+</suite>   

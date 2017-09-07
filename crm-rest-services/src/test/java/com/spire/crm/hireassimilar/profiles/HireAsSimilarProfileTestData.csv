@@ -1,0 +1,3 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,TestData.TestSteps,TestData.data
+1,SimilarProfiles_Sanity,Steps : # API : POST /pipeline/_listDateRanges # Action : list the Date Ranges available in crm pipeline # Expected : 5 date ranges should display,null
+2,similarProfilesSkill_Sanity,Steps : # API : GET /pipeline/_getRatingConfigInfo : get Rating ConfigInfo # Expected : all the rating config should display from config/from weight rule,null

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Sales CRM UI Automation" parallel="tests" thread-count="2">
+
+	<listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReportV2" />
+	</listeners>
+	
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+	<parameter name="testRetryCount" value="3" />
+	<parameter name="selenium_grid" value="true" />
+
+	<test name="CRM UI Automation - Sales Sanity TestScriptsFor Demo US">
+		<parameter name="URL"
+			value="https://spiredemovista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="username" value="6004_batch@demo.com" />
+		<parameter name="password" value="6004_B@tch" />
+		<parameter name="REALM" value="REALM10" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+
+	<test
+		name="CRM UI Automation - Sales Sanity TestScriptsFor Demo-India">
+		<parameter name="URL"
+			value="https://spiredemoindvista.spire2grow.com/UI/src/app/index.html#/" />
+		<parameter name="username" value="batch@demoind.com" />
+		<parameter name="password" value="6020_B@tch" />
+		<parameter name="REALM" value="REALM16" />
+		<groups>
+			<run>
+				<include name="SANITY" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.sanity.test" />
+		</packages>
+	</test>
+	
+</suite> 

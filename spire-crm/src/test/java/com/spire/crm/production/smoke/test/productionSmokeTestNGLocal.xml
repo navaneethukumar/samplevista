@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="CRM UI Automation" thread-count="1">
+	<!-- <listeners> <listener class-name="com.spire.base.reporter.SpireReport" 
+		/> <listener class-name="com.spire.base.reporter.SpireEmailReport" /> </listeners> -->
+	<parameter name="healthCheck" value="false" />
+	<parameter name="browser" value="Chrome" />
+
+	<test
+		name="CRM UI Automation - Production Smoke TestScripts For TEST Tenant">
+		<parameter name="URL"
+			value="http://staging.vista.corp.spire.com/UI/src/app/index.html#/" />
+		<parameter name="username" value="tester@logica.com" />
+		<parameter name="password" value="spire@123" />
+		<parameter name="db_host" value="192.168.2.65" />
+		<parameter name="db_password" value="root" />
+		<parameter name="schema_name" value="logica_schema" />
+		<parameter name="search_match_host" value="192.168.2.75:8182" />
+
+		<parameter name="candidateId" value="6015:6005:947bbc8e0b3648d4a4c3e35702d7135b" />  
+		<groups>          
+			<run>
+				<include name="verifyUserService" />       
+			</run>
+		</groups>
+		<packages>
+			<package name="com.spire.crm.production.smoke.test" />
+		</packages>
+	</test>
+
+</suite>   
+
+
